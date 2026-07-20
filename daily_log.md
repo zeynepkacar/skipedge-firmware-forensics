@@ -24,7 +24,8 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 - Proje klasör yapısı oluşturuldu (data, layers, scoring, ui, reports)
 - Statik bütünlük katmanı (static_integrity.py) yazıldı — SHA-256 tabanlı hash karşılaştırma
 - Test verisiyle doğrulandı: eklenen, değiştirilen, silinen dosya tespiti başarıyla çalıştı
-
-**Notlar / Sonraki Adımlar:**
-- Entropi analizi katmanına geçilecek
+- Entropi analizi katmanı (entropy_analysis.py) yazıldı — Shannon entropi hesaplama ile dosyaları 256 byte'lık bloklara bölüp analiz eden yapı kuruldu
+- Test verisi üretimi için generate_test_data.py yazıldı (rastgele/yüksek entropili dosya oluşturuyor)
+- İlk testte eşik değeri (7.5) çok sıkı çıktı, gerçek ölçümlere göre 6.8'e kalibre edildi
+- Test sonucu doğrulandı: rastgele veri içeren dosya (hidden_payload.bin) başarıyla "şüpheli" olarak tespit edildi, normal metin dosyalarında yanlış alarm çıkmadı
 
