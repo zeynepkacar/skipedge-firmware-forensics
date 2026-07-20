@@ -18,4 +18,13 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 - Statik bütünlük (hash karşılaştırma) katmanının geliştirilmesine geçilecek
 
 ---
+## 20.07.2026
+
+**Yapılanlar:**
+- Proje klasör yapısı oluşturuldu (data, layers, scoring, ui, reports)
+- Statik bütünlük katmanı (static_integrity.py) yazıldı — SHA-256 tabanlı hash karşılaştırma
+- Test verisiyle doğrulandı: eklenen, değiştirilen, silinen dosya tespiti başarıyla çalıştı
+
+**Notlar / Sonraki Adımlar:**
+- Entropi analizi katmanına geçilecek
 
