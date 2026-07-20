@@ -1,0 +1,13 @@
+# Büyük ham firmware dosyaları (GitHub 100MB limiti aşıyor, versiyon kontrolüne gerek yok)
+data/raw_firmware/*.img
+data/raw_firmware/*.img.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv-1/
+
+# Çıkarılmış firmware dosya sistemleri (binlerce küçük dosya, repo şişirir)
+data/original/
+data/suspicious/

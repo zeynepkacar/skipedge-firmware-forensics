@@ -78,18 +78,41 @@ def summarize_suspicious_blocks(scan_results):
             }
     return summary
 
+def compare_entropy(original_dir, suspicious_dir):
+    """İki firmware'i karşılaştırır, ortak dosyalarda entropi değişimini tespit eder."""
+    original_results = scan_directory_entropy(original_dir)
+    suspicious_results = scan_directory_entropy(suspicious_dir)
 
+    common_files = set(original_results.keys()) & set(suspicious_results.keys())
+    only_in_suspicious = set(suspicious_results.keys()) - set(original_results.keys())
+
+    entropy_changes = {}
+
+    # Ortak dosyalarda entropi profili değişmiş mi?
+    for file_path in common_files:
+        orig_blocks = original_results[file_path]
+        susp_blocks = suspicious_results[file_path]
+        if len(orig_blocks) != len(susp_blocks):
+            entropy_changes[file_path] = "boyut değişti, blok sayısı farklı"
+            continue
+        orig_avg = sum(b["entropy"] for b in orig_blocks) / len(orig_blocks) if orig_blocks else 0
+        susp_avg = sum(b["entropy"] for b in susp_blocks) / len(susp_blocks) if susp_blocks else 0
+        if abs(orig_avg - susp_avg) > 0.5:  # anlamlı bir sapma
+            entropy_changes[file_path] = f"ortalama entropi {orig_avg:.2f} -> {susp_avg:.2f}"
+
+    # Sadece şüpheli tarafta olan YENİ dosyalar (asıl önemli olan burası)
+    new_high_entropy_files = {
+        f: suspicious_results[f]
+        for f in only_in_suspicious
+        if any(b["suspicious"] for b in suspicious_results[f])
+    }
+
+    return {
+        "changed_entropy_files": entropy_changes,
+        "new_suspicious_files": list(new_high_entropy_files.keys()),
+    }        
 if __name__ == "__main__":
-    print("=== Entropi Analizi: data/original ===")
-    original_results = scan_directory_entropy("data/original")
-    original_summary = summarize_suspicious_blocks(original_results)
-    print(f"Şüpheli dosya sayısı: {len(original_summary)}")
-    for file_path, info in original_summary.items():
-        print(f"  {file_path}: {info}")
-
-    print("\n=== Entropi Analizi: data/suspicious ===")
-    suspicious_results = scan_directory_entropy("data/suspicious")
-    suspicious_summary = summarize_suspicious_blocks(suspicious_results)
-    print(f"Şüpheli dosya sayısı: {len(suspicious_summary)}")
-    for file_path, info in suspicious_summary.items():
-        print(f"  {file_path}: {info}")
+    print("=== Karşılaştırmalı Entropi Analizi: original vs suspicious ===")
+    comparison = compare_entropy("data/original", "data/suspicious")
+    print(f"Entropisi değişen ortak dosyalar: {comparison['changed_entropy_files']}")
+    print(f"Sadece suspicious'ta olan yüksek entropili yeni dosyalar: {comparison['new_suspicious_files']}")
