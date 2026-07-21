@@ -1,4 +1,4 @@
-"""'.img.gz' dosyasını açıp '.img' dosyasına çevirir."""
+"""Decompresses a '.img.gz' file into a '.img' file."""
 import gzip
 import shutil
 
@@ -9,4 +9,4 @@ with gzip.open(input_path, "rb") as f_in:
     with open(output_path, "wb") as f_out:
         shutil.copyfileobj(f_in, f_out)
 
-print(f"Açıldı: {output_path}")
+print(f"Decompressed: {output_path}")

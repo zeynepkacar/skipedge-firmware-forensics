@@ -1,20 +1,19 @@
 """
-Entropi Analizi Katmanı (Entropy Analysis Layer)
-Dosyaları sabit boyutlu bloklara bölüp her bloğun Shannon entropi değerini hesaplar.
-Yüksek entropili bölgeler şifrelenmiş/gizlenmiş kod şüphesi taşır.
+Entropy Analysis Layer
+Splits files into fixed-size blocks and calculates the Shannon entropy of each block.
+High-entropy regions may indicate encrypted/obfuscated code.
 """
 
 import math
 import os
 from collections import Counter
 
-# Bir bloğun "şüpheli" sayılması için eşik değer (0-8 arası, 8 = maksimum rastgelelik)
 ENTROPY_THRESHOLD = 6.8
-BLOCK_SIZE = 256  # byte
+BLOCK_SIZE = 256  # bytes
 
 
 def calculate_entropy(data):
-    """Verilen byte dizisinin Shannon entropi değerini hesaplar (0-8 arası)."""
+    """Calculates the Shannon entropy of a byte sequence (0-8 range)."""
     if not data:
         return 0.0
 
@@ -30,8 +29,8 @@ def calculate_entropy(data):
 
 
 def analyze_file_entropy(file_path, block_size=BLOCK_SIZE):
-    """Bir dosyayı bloklara böler, her bloğun entropisini hesaplar.
-    Dönen değer: [{block_index, offset, entropy, suspicious}, ...] listesi
+    """Splits a file into blocks and calculates the entropy of each block.
+    Returns: [{block_index, offset, entropy, suspicious}, ...] list
     """
     results = []
     with open(file_path, "rb") as f:
@@ -52,8 +51,8 @@ def analyze_file_entropy(file_path, block_size=BLOCK_SIZE):
 
 
 def scan_directory_entropy(directory_path):
-    """Bir dizindeki tüm dosyalar için entropi analizini çalıştırır.
-    Dönen değer: {göreli_dosya_yolu: [blok sonuçları]} sözlüğü
+    """Runs entropy analysis for all files in a directory.
+    Returns: {relative_file_path: [block results]} dictionary
     """
     all_results = {}
     for root, _, files in os.walk(directory_path):
@@ -65,7 +64,7 @@ def scan_directory_entropy(directory_path):
 
 
 def summarize_suspicious_blocks(scan_results):
-    """Şüpheli (yüksek entropili) blokları dosya bazında özetler."""
+    """Summarizes suspicious (high-entropy) blocks by file."""
     summary = {}
     for file_path, blocks in scan_results.items():
         suspicious_blocks = [b for b in blocks if b["suspicious"]]
@@ -78,8 +77,9 @@ def summarize_suspicious_blocks(scan_results):
             }
     return summary
 
+
 def compare_entropy(original_dir, suspicious_dir):
-    """İki firmware'i karşılaştırır, ortak dosyalarda entropi değişimini tespit eder."""
+    """Compares two firmware directories and detects entropy shifts in shared files."""
     original_results = scan_directory_entropy(original_dir)
     suspicious_results = scan_directory_entropy(suspicious_dir)
 
@@ -88,19 +88,17 @@ def compare_entropy(original_dir, suspicious_dir):
 
     entropy_changes = {}
 
-    # Ortak dosyalarda entropi profili değişmiş mi?
     for file_path in common_files:
         orig_blocks = original_results[file_path]
         susp_blocks = suspicious_results[file_path]
         if len(orig_blocks) != len(susp_blocks):
-            entropy_changes[file_path] = "boyut değişti, blok sayısı farklı"
+            entropy_changes[file_path] = "size changed, block count differs"
             continue
         orig_avg = sum(b["entropy"] for b in orig_blocks) / len(orig_blocks) if orig_blocks else 0
         susp_avg = sum(b["entropy"] for b in susp_blocks) / len(susp_blocks) if susp_blocks else 0
-        if abs(orig_avg - susp_avg) > 0.5:  # anlamlı bir sapma
-            entropy_changes[file_path] = f"ortalama entropi {orig_avg:.2f} -> {susp_avg:.2f}"
+        if abs(orig_avg - susp_avg) > 0.5:
+            entropy_changes[file_path] = f"average entropy {orig_avg:.2f} -> {susp_avg:.2f}"
 
-    # Sadece şüpheli tarafta olan YENİ dosyalar (asıl önemli olan burası)
     new_high_entropy_files = {
         f: suspicious_results[f]
         for f in only_in_suspicious
@@ -110,9 +108,11 @@ def compare_entropy(original_dir, suspicious_dir):
     return {
         "changed_entropy_files": entropy_changes,
         "new_suspicious_files": list(new_high_entropy_files.keys()),
-    }        
+    }
+
+
 if __name__ == "__main__":
-    print("=== Karşılaştırmalı Entropi Analizi: original vs suspicious ===")
+    print("=== Comparative Entropy Analysis: original vs suspicious ===")
     comparison = compare_entropy("data/original", "data/suspicious")
-    print(f"Entropisi değişen ortak dosyalar: {comparison['changed_entropy_files']}")
-    print(f"Sadece suspicious'ta olan yüksek entropili yeni dosyalar: {comparison['new_suspicious_files']}")
+    print(f"Common files with changed entropy: {comparison['changed_entropy_files']}")
+    print(f"New high-entropy files only in suspicious: {comparison['new_suspicious_files']}")

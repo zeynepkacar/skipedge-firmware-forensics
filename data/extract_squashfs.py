@@ -1,4 +1,4 @@
-"""squashfs .img dosyasını açıp içindeki dosyaları data/original'a çıkarır."""
+"""Extracts a squashfs .img file's contents into data/original."""
 import os
 from PySquashfsImage import SquashFsImage
 
@@ -21,6 +21,6 @@ for entry in image:
             f.write(entry.read_bytes())
         count += 1
     except Exception as e:
-        print(f"Atlandı ({entry.path}): {e}")
+        print(f"Skipped ({entry.path}): {e}")
 
-print(f"Toplam {count} dosya çıkarıldı → {output_dir}")
+print(f"Total {count} files extracted -> {output_dir}")
