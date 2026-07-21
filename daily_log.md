@@ -18,7 +18,7 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 - Statik bütünlük (hash karşılaştırma) katmanının geliştirilmesine geçilecek
 
 ---
-## 20.07.2026
+
 ## 20.07.2026
 
 **Yapılanlar:**
@@ -35,4 +35,14 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 
 **Notlar / Sonraki Adımlar:**
 - YARA imza/pattern tarama katmanına (3. katman) geçilecek
+- İzin/yetki (SUID/SGID) analiz katmanına geçilecek
+ ## 22.07.2026 
+
+**Yapılanlar:**
+- YARA imza/pattern tarama katmanı yazıldı ve test edildi
+- Backdoor dosyası (usr/bin/update_service) başarıyla tespit edildi - entropi katmanının kaçırdığı saldırıyı YARA yakaladı, bu çok katmanlı yaklaşımın gerekliliğini doğruladı
+- Yanlış pozitif gözlemi: normal firmware dosyalarında (pppd, .js dosyaları) "password=" ifadesi nedeniyle alarm oluştu, skorlama katmanında bu kurala düşük ağırlık verilecek
+- Tüm kod dosyaları İngilizceye çevrildi (yorum satırları, değişken isimleri)
+
+**Notlar / Sonraki Adımlar:**
 - İzin/yetki (SUID/SGID) analiz katmanına geçilecek
