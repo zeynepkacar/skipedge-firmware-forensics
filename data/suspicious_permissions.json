@@ -1,0 +1,7028 @@
+{
+  "bin/ash": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/board_detect": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/busybox": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/cat": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/chgrp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/chmod": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/chown": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/config_generate": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/cp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/date": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/dd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/df": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/dmesg": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/echo": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/egrep": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/false": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/fgrep": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/fsync": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/grep": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/gunzip": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/gzip": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ipcalc.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/kill": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ln": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/lock": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/login": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ls": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/mkdir": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/mknod": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/mktemp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/mount": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/mv": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/netmsg": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/netstat": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/nice": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/passwd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/pidof": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ping": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ping6": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ps": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/pwd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/rm": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/rmdir": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/sed": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/sh": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/sleep": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/sync": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/tar": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/touch": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/traceroute": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/traceroute6": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/true": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/ubus": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/uclient-fetch": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/umount": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/uname": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/vi": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "bin/zcat": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "dev/console": {
+    "mode": 8576,
+    "filemode": "crw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/TZ": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/apk/arch": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/apk/keys/openwrt-25.12.pem": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/apk/repositories.d/customfeeds.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/apk/repositories.d/distfeeds.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/apk/world": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/banner": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/banner.failsafe": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/board.d/01_leds": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/board.d/02_network": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/board.d/99-default_network": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/capabilities/ntpd.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/dhcp": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/dropbear": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/firewall": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/luci": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/rpcd": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/config/uhttpd": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/device_info": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/diag.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/dnsmasq.conf": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/e2fsck.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ethers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/fstab": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/group": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hosts": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug-preinit.json": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.d/iface/00-netstate": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.d/iface/20-firewall": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.d/leds/00-init": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.d/net/00-sysctl": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.d/ntp/25-dnsmasqsec": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/hotplug.json": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/boot": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/cron": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/dnsmasq": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/done": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/dropbear": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/firewall": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/gpio_switch": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/led": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/log": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/network": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/odhcpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/packet_steering": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/rpcd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/sysctl": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/sysfixtime": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/sysntpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/system": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/ucitrack": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/uhttpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/umount": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/urandom_seed": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/init.d/urngd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/inittab": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/iproute2/ematch_map": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/iproute2/rt_protos": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/iproute2/rt_tables": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/localtime": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/luci-uploads/.placeholder": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/02-crypto-hash": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/04-crypto-crc32c": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/15-libphy": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/15-mii": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/15-phylink": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/17-pps": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/18-phy-realtek": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/18-ptp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/19-tg3": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/30-button-hotplug": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/30-fs-vfat": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/34-igc": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/35-igb": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/e1000e": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules-boot.d/r8169": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/02-crypto-hash": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/04-crypto-crc32c": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/05-drm": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/06-fb": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/07-fb-cfb-copyarea": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/07-fb-cfb-fillrect": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/07-fb-cfb-imgblt": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/07-fb-sys-fops": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/07-fb-sys-ram": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/12-amazon-ena": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/15-libphy": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/15-mii": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/15-phylink": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/17-pps": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/18-phy-realtek": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/18-ptp": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/19-tg3": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/20-dma-buf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/20-pcs-xpcs": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/25-nls-cp437": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/25-nls-iso8859-1": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/25-nls-utf8": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/30-button-hotplug": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/30-fs-vfat": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/32-mdio": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/34-igc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/35-amd-xgbe": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/35-e1000": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/35-igb": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/35-ixgbe": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/40-stmmac-core": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/45-dwmac-intel": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/51-i2c-core": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/55-i2c-algo-bit": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/acpi-video": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/backlight": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/bnx2": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-buddy": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-display-helper": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-exec": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-i915": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-kms-helper": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-suballoc-helper": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-ttm": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/drm-ttm-helper": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/e1000e": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/forcedeth": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/lib-crc-ccitt": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/lib-crc32c": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/mdio-devres": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-conntrack": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-flow": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-log": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-nat": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-reject": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nf-reject6": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nfnetlink": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nft-core": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nft-fib": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nft-nat": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/nft-offload": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/ppp": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/pppoe": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/modules.d/r8169": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/mtab": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/nftables.d/10-custom-filter-chains.nft": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/nftables.d/README": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/odhcp6c.user": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/openwrt_release": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/openwrt_version": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/opkg/keys/8a11255d14aef6c8": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/os-release": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/owut.d/pre-install.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/passwd": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ppp/chap-secrets": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ppp/filter": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ppp/options": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ppp/resolv.conf": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/preinit": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/profile": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/profile.d/00-passwordless-root.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/profile.d/apk-cheatsheet.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/profile.d/busybox-history-file.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/protocols": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.button/failsafe": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.button/power": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.button/reboot": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.button/reset": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.button/rfkill": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.common": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K10gpio_switch": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K50dropbear": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K85odhcpd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K89log": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K90boot": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K90network": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K90sysfixtime": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/K90umount": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S00sysfixtime": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S00urngd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S10boot": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S10system": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S11sysctl": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S12log": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S12rpcd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S19dnsmasq": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S19dropbear": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S19firewall": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S20network": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S25packet_steering": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S35odhcpd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S50cron": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S50uhttpd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S80ucitrack": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S94gpio_switch": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S95done": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S96led": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S98sysntpd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.d/S99urandom_seed": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/rc.local": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/resolv.conf": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/services": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/shadow": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/shells": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/shinit": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ssl/cert.pem": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/ssl/certs/ca-certificates.crt": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/sysctl.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/sysctl.d/10-default.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/sysctl.d/11-nf-conntrack.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/syslog.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/sysupgrade.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/00_uhttpd_ubus": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/10_migrate-shadow": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/11_network-migrate-bridges": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/12_network-generate-ula": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/14_migrate-dhcp-release": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/14_network-generate-duid": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/15_migrate-time-zonename": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/15_odhcpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/30_luci-theme-bootstrap": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-attendedsysupgrade": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-dnsmasq-migrate-ipset.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-dnsmasq-migrate-resolv-conf-auto.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-dropbear": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-migrate-rpcd-ubus-sock.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50-root-passwd": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/50_luci-mod-admin-full": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/51-attendedsysupgrade-owut": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/uci-defaults/95-luci-app-attendedsysupgrade-housekeeping": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "etc/udhcpc.user": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/db/installed": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/db/lock": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/db/scripts.tar.gz": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/db/triggers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/apk-mbedtls.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/apk-mbedtls.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/apk-mbedtls.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/attendedsysupgrade-common.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/base-files.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/base-files.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/base-files.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/bnx2-firmware.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/busybox.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/busybox.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/busybox.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/busybox.rusers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ca-bundle.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/cgi-io.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dnsmasq.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dnsmasq.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dnsmasq.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dnsmasq.rusers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dropbear.alternatives": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dropbear.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dropbear.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/dropbear.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/e2fsprogs.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/e2fsprogs.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/e2fsprogs.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/firewall4.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/firewall4.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/firewall4.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/fstools.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/fwtool.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/getrandom.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/grub2-bios-setup.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/grub2-efi.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/grub2.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/i915-firmware-dmc.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/jansson4.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/jshn.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/jsonfilter.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kernel.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-acpi-video.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-amazon-ena.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-amd-xgbe.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-backlight.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-bnx2.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-button-hotplug.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-crypto-crc32c.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-crypto-hash.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-dma-buf.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-buddy.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-display-helper.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-exec.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-i915.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-kms-helper.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-suballoc-helper.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-ttm-helper.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm-ttm.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-drm.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-dwmac-intel.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-e1000.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-e1000e.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb-cfb-copyarea.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb-cfb-fillrect.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb-cfb-imgblt.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb-sys-fops.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb-sys-ram.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fb.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-forcedeth.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-fs-vfat.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-hwmon-core.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-i2c-algo-bit.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-i2c-core.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-igb.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-igc.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-input-core.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-ixgbe.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-lib-crc-ccitt.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-lib-crc32c.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-libphy.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-mdio-devres.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-mdio.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-mii.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-conntrack.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-conntrack6.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-flow.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-log.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-log6.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-nat.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-reject.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nf-reject6.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nfnetlink.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nft-core.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nft-fib.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nft-nat.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nft-offload.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nls-base.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nls-cp437.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nls-iso8859-1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-nls-utf8.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-pcs-xpcs.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-phy-realtek.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-phylink.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-ppp.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-pppoe.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-pppox.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-pps.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-ptp.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-r8169.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-slhc.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-stmmac-core.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/kmod-tg3.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libblkid1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libblobmsg-json20260213.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libc.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libcomerr0.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libe2p2.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libext2fs2.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libf2fs6.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libgcc1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libiwinfo-data.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libiwinfo20230701.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libjson-c5.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libjson-script20260213.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/liblucihttp-ucode.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/liblucihttp0.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libmbedtls21.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libmnl0.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libnftnl11.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libnl-tiny1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libpthread.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/librt.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libsmartcols1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libss2.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libubox20260213.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libubus20251202.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libuci20250120.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libuclient20201210.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libucode20230711.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libudebug.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libustream-mbedtls20201210.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/libuuid1.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/logd.alternatives": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/logd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/logd.rusers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-app-attendedsysupgrade.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-app-firewall.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-app-package-manager.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-base.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-base.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-base.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-lib-uqr.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-light.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-mod-admin-full.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-mod-network.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-mod-status.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-mod-system.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-proto-ipv6.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-proto-ppp.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-ssl.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci-theme-bootstrap.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/luci.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/mkf2fs.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/mtd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/netifd.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/netifd.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/netifd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/nftables-json.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/odhcp6c.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/odhcp6c.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/odhcp6c.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/odhcpd-ipv6only.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/openwrt-keyring.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/owut.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/owut.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/partx-utils.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ppp-mod-pppoe.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ppp.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ppp.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ppp.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/procd-seccomp.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/procd-ujail.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/procd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/procd.rusers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/px5g-mbedtls.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/r8169-firmware.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-file.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-iwinfo.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-luci.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-rpcsys.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-rrdns.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd-mod-ucode.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/rpcd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubox.alternatives": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubox.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubox.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubox.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubus.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubusd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ubusd.rusers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uci.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uclient-fetch.alternatives": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uclient-fetch.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-fs.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-html.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-log.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-math.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-ubus.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-uci.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-uclient.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode-mod-uloop.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/ucode.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uhttpd-mod-ubus.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uhttpd.conffiles": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uhttpd.conffiles_static": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/uhttpd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/urandom-seed.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/urngd.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/usign.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/apk/packages/zlib.list": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/config/uci.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/bnx2/bnx2-mips-06-6.2.3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/bnx2/bnx2-mips-09-6.2.1b.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/bnx2/bnx2-rv2p-06-6.0.15.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/bnx2/bnx2-rv2p-09-6.0.17.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/bnx2/bnx2-rv2p-09ax-6.0.17.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc_ver2_09.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc_ver2_10.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc_ver2_12.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc_ver2_14.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adlp_dmc_ver2_16.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/adls_dmc_ver2_01.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/bmg_dmc.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/bxt_dmc_ver1_07.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/cnl_dmc_ver1_06.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/cnl_dmc_ver1_07.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/dg1_dmc_ver2_02.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/dg2_dmc_ver2_06.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/dg2_dmc_ver2_07.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/dg2_dmc_ver2_08.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/glk_dmc_ver1_04.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/icl_dmc_ver1_07.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/icl_dmc_ver1_09.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/kbl_dmc_ver1_01.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/kbl_dmc_ver1_04.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/mtl_dmc.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/mtl_dmc_ver2_10.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/rkl_dmc_ver2_02.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/rkl_dmc_ver2_03.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/skl_dmc_ver1_23.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/skl_dmc_ver1_26.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/skl_dmc_ver1_27.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/tgl_dmc_ver2_04.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/tgl_dmc_ver2_06.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/tgl_dmc_ver2_08.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/tgl_dmc_ver2_12.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/xe2lpd_dmc.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/i915/xe3lpd_dmc.bin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8105e-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8106e-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8106e-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8107e-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8107e-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125a-3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125b-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125b-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125bp-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125cp-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125d-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125d-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8125k-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8126a-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8126a-3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8127a-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168d-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168d-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168e-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168e-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168e-3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168f-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168f-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168fp-3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168g-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168g-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168g-3.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168h-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8168h-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8402-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8411-1.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/firmware/rtl_nic/rtl8411-2.fw": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/caldata.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/fsck/e2fsck.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/ipv4.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/leds.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/migrations.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/network.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/preinit.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/procd.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/service.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/system.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions/uci-defaults.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/functions.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/ld-musl-x86_64.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libblobmsg_json.so.20260213": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libc.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libfstools.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libgcc_s.so.1": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libjson_script.so.20260213": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libpreload-seccomp.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libpreload-trace.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libsetlbf.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libubox.so.20260213": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libubus.so.20251202": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libuci.so.20250120": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libustream-ssl.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/libvalidate.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/amd-xgbe.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/bnx2.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/button-hotplug.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/crc-ccitt.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/drm_buddy.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/drm_display_helper.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/drm_exec.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/drm_suballoc_helper.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/dwmac-generic.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/dwmac-intel.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/e1000.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/e1000e.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/ena.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/fat.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/forcedeth.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/i2c-dev.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/i915.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/igb.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/igc.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/ixgbe.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/libcrc32c.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/mdio.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/mii.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/modules.builtin": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/modules.builtin.modinfo": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_conntrack.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_defrag_ipv4.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_defrag_ipv6.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_flow_table.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_flow_table_inet.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_log_syslog.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_nat.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_reject_ipv4.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_reject_ipv6.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nf_tables.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nfnetlink.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_chain_nat.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_ct.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_fib.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_fib_inet.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_fib_ipv4.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_fib_ipv6.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_flow_offload.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_hash.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_limit.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_log.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_masq.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_nat.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_numgen.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_quota.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_redir.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_reject.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_reject_inet.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_reject_ipv4.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nft_reject_ipv6.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nls_cp437.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nls_iso8859-1.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/nls_utf8.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/pcs_xpcs.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/phylink.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/ppp_async.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/ppp_generic.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/pppoe.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/pppox.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/r8169.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/realtek.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/slhc.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/stmmac-platform.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/stmmac.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/tg3.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/vfat.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/video.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/modules/6.12.94/wmi.ko": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/dhcp.script": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/dhcpv6.script": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/main.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/netifd-proto.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/ppp-down": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/ppp-up": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/ppp6-up": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/proto/dhcp.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/proto/dhcpv6.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/proto/ppp.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/utils.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/netifd/utils.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/network/config.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/00_preinit.conf": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/01_sysinfo": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/02_default_set_state": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/02_load_x86_ucode": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/02_sysinfo": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/10_indicate_failsafe": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/10_indicate_preinit": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/15_essential_fs_x86": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/20_check_iso": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/30_failsafe_wait": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/40_run_failsafe_hook": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/45_mount_xenfs": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/50_indicate_regular_preinit": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/70_initramfs_test": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/79_move_config": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/80_mount_root": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/81_urandom_seed": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/82_config_generate": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/99_10_failsafe_dropbear": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/99_10_failsafe_login": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/preinit/99_10_run_init": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/common.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/do_stage2": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/fwtool.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/base-files": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/base-files-essential": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/busybox": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/dnsmasq": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/dropbear": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/firewall4": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/luci-base": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/netifd": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/odhcp6c": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/owut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/ppp": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/keep.d/uhttpd": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/platform.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/stage2": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib/upgrade/tar.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "lib64": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "rom/note": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/askfirst": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/devstatus": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/factoryreset": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/firstboot": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/fw3": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/fw4": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/halt": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/hotplug-call": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/hwclock": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ifconfig": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ifdown": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ifstatus": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ifup": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/init": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/insmod": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ip": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/jffs2mark": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/jffs2reset": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/kmodloader": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/led.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/logd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/logread": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/lsmod": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/mkswap": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/modinfo": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/modprobe": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/mount_root": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/mtd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/netifd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/pivot_root": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/poweroff": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/procd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/reboot": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/reload_config": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/rmmod": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/route": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/rpcd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/seccomp-trace": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/service": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/start-stop-daemon": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/swapoff": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/swapon": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/switch_root": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/sysctl": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/sysupgrade": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ubusd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/uci": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/udevtrigger": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/udhcpc": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/ujail": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/upgraded": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/urandom_seed": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/urngd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/utrace": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "sbin/validate_data": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/[": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/[[": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/apk": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/awk": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/basename": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/clear": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/cmp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/crontab": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/cut": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/dbclient": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/dirname": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/dropbearkey": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/du": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/env": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/expr": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/find": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/flock": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/free": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/fwtool": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/getrandom": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/head": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/hexdump": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/id": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/jshn": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/jsonfilter": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/killall": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/ldd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/less": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/logger": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/luci-bwc": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/md5sum": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/mkfifo": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/nc": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/nslookup": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/owut": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/pgrep": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/printf": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/readlink": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/reset": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/resize": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/scp": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/seq": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/setsid": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/sha256sum": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/signify": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/sort": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/ssh": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/ssh-keygen": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/strings": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/tail": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/taskset": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/tee": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/test": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/time": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/top": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/tr": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/ucc": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/ucode": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/uniq": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/uptime": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/usign": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/utpl": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/wc": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/wget": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/which": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/xargs": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/yes": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/dnsmasq/dhcp-script.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libblkid.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libblkid.so.1.1.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libcom_err.so.0": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libcom_err.so.0.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libe2p.so.2": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libe2p.so.2.3": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libext2fs.so.2": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libext2fs.so.2.4": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libf2fs.so.10": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libf2fs.so.10.0.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libiwinfo.so.20230701": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libjansson.so.4": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libjansson.so.4.14.0": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libjson-c.so.5": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libjson-c.so.5.4.0": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/liblucihttp.so.0": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/liblucihttp.so.0.1": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedcrypto.so.16": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedcrypto.so.3.6.6": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedtls.so.21": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedtls.so.3.6.6": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedx509.so.3.6.6": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmbedx509.so.7": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmnl.so.0": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libmnl.so.0.2.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnftables.so": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnftables.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnftables.so.1.1.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnftnl.so.11": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnftnl.so.11.7.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libnl-tiny.so.1": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libsmartcols.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libsmartcols.so.1.1.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libss.so.2": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libss.so.2.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libuclient.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libucode.so.20230711": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libudebug.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libuuid.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libuuid.so.1.3.0": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libz.so": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libz.so.1": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/libz.so.1.3.1": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/os-release": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/pppd/2.5.2/pppoe.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/file.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/iwinfo.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/luci.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/rpcsys.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/rrdns.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/rpcd/ucode.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/fs.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/html.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/log.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/luci/core.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/lucihttp.so": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/math.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/ubus.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/uci.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/uclient.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/ucode/uloop.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib/uhttpd_ubus.so": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/lib64": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/cgi-io": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/login.sh": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/logread-ubox": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/luci-peeraddr": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/network/packet-steering.uc": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/package-manager-call": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/syslog-wrapper": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/libexec/validate_firmware_image": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/addpart": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/brctl": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/chroot": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/crond": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/delpart": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/dnsmasq": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/dropbear": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/e2fsck": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/fsck.ext2": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/fsck.ext3": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/fsck.ext4": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/grub-bios-setup": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/mke2fs": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/mkfs.ext2": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/mkfs.ext3": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/mkfs.ext4": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/mkfs.f2fs": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/nft": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/ntpd": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/ntpd-hotplug": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/odhcp6c": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/odhcpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/odhcpd-update": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/partx": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/pppd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/px5g": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/sbin/uhttpd": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/acl.d/dnsmasq_acl.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/acl.d/logd.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/acl.d/luci-base.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/acl.d/ntpd.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/dnsmasq/dhcpbogushostname.conf": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/dnsmasq/rfc6761.conf": {
+    "mode": 33152,
+    "filemode": "-rw-------",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/helpers": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/main.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/mangle-rule.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/redirect.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/rule.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/ruleset.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-drop-invalid.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-jump.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-masq.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-match.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-mssfix.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-notrack.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/firewall4/templates/zone-verdict.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/libiwinfo/devices.txt": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/libubox/jshn.sh": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-app-attendedsysupgrade.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-app-firewall.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-app-package-manager.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-base.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-mod-network.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-mod-status.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/luci/menu.d/luci-mod-system.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/nftables.d/README": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-app-attendedsysupgrade.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-app-firewall.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-app-package-manager.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-base.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-mod-network.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-mod-status-index.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-mod-status.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/luci-mod-system.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/acl.d/unauthenticated.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/rpcd/ucode/luci": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-app-firewall.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-network-dnsmasq.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-network-interfaces.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-network-odhcpd.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-network-wireless.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-system-dropbear.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-system-mounts.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucitrack/luci-mod-system-system.json": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/fw4.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/controller/admin/index.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/controller/admin/uci.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/dispatcher.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/http.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/runtime.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/sys.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/admin_status/index.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/csrftoken.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/error404.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/error500.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/footer.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/header.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/sysauth.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/themes/bootstrap/footer.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/themes/bootstrap/header.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/themes/bootstrap-dark": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/themes/bootstrap-light": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/template/view.ut": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/uhttpd.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/version.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/luci/zoneinfo.uc": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/ucode/utils/argparse.uc": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/share/udhcpc/default.script": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "var": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/cgi-bin/cgi-backup": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/cgi-bin/cgi-download": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/cgi-bin/cgi-exec": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/cgi-bin/cgi-upload": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/cgi-bin/luci": {
+    "mode": 33261,
+    "filemode": "-rwxr-xr-x",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/index.html": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap/cascade.css": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap/logo.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap/logo_48.png": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap/mobile.css": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap-dark": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/bootstrap-light": {
+    "mode": 41471,
+    "filemode": "lrwxrwxrwx",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/cbi/file.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/cbi/folder.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/cbi/link.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/cbi.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/firewall.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/form.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/fs.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/alias.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/alias_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/bridge.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/bridge_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/ethernet.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/ethernet_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/loading.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/port_down.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/port_pse_down.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/port_pse_up.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/port_up.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-000-000.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-000-025.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-025-050.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-050-075.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-075-100.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/signal-none.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/switch.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/switch_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/tunnel.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/tunnel_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/vlan.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/vlan_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/vrf.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/vrf_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/wifi.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/wifi_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/wireguard.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/icons/wireguard_disabled.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/luci.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/menu-bootstrap.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/network.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/464xlat.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/6in4.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/6rd.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/6to4.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/dhcp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/dhcpv6.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/dslite.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/ipip6.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/l2tp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/map.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/none.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/ppp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/pppoa.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/pppoe.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/pptp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/protocol/static.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/rpc.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/bandwidth.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/channel_analysis.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/connections.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/load.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/wifirate.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/svg/wireless.svg": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/dnsrecordhandlers.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/firewall.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/network.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/prng.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/views.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/tools/widgets.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/uci.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/ui.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/uqr.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/validation.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/attendedsysupgrade/configuration.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/attendedsysupgrade/overview.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/bootstrap/sysauth.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/custom.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/forwards.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/ipsets.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/rules.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/snats.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/firewall/zones.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/dhcp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/diagnostics.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/dns.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/interfaces.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/routes.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/switch.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/network/wireless.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/package-manager.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/bandwidth.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/channel_analysis.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/connections.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/dmesg.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/10_system.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/11_upgrades.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/20_memory.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/25_storage.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/29_ports.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/30_network.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/40_dhcp.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/50_dsl.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/include/60_wifi.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/index.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/iptables.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/load.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/nftables.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/processes.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/routes.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/routesj.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/syslog.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/status/wireless.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/crontab.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/dropbear.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/flash.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/led-trigger/default-on.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/led-trigger/heartbeat.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/led-trigger/netdev.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/led-trigger/none.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/led-trigger/timer.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/leds.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/mounts.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/password.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/reboot.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/repokeys.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/sshkeys.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/startup.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/system.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/view/system/uhttpd.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "www/luci-static/resources/xhr.js": {
+    "mode": 33188,
+    "filemode": "-rw-r--r--",
+    "uid": 0,
+    "gid": 0
+  },
+  "usr/bin/update_service": {
+    "mode": 2496,
+    "filemode": "?rws------",
+    "uid": 0,
+    "gid": 0
+  }
+}

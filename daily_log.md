@@ -46,3 +46,15 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 
 **Notlar / Sonraki Adımlar:**
 - İzin/yetki (SUID/SGID) analiz katmanına geçilecek
+
+## 22.07.2026
+
+**Yapılanlar:**
+- İzin/yetki (SUID/SGID) analiz katmanı yazıldı
+- Önemli teknik engel: Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemiyor, bu yüzden canlı dosya sistemi yerine squashfs imajının kendi meta verisinden (mode/uid/gid) okuma yaklaşımına geçildi
+- extract_squashfs.py ve tamper_firmware.py, izin bilgisini JSON manifest dosyalarında (original_permissions.json, suspicious_permissions.json) saklayacak şekilde güncellendi
+- Test sonucu: eklenen SUID izni (usr/bin/update_service) başarıyla tespit edildi
+
+**Notlar / Sonraki Adımlar:**
+- 4 analiz katmanı tamamlandı (statik bütünlük, entropi, YARA, izin/yetki)
+- Sırada: skorlama ve zaman çizelgesi katmanı
