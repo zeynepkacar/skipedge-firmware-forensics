@@ -36,7 +36,8 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 **Notlar / Sonraki Adımlar:**
 - YARA imza/pattern tarama katmanına (3. katman) geçilecek
 - İzin/yetki (SUID/SGID) analiz katmanına geçilecek
- ## 22.07.2026 
+
+ ## 21.07.2026 
 
 **Yapılanlar:**
 - YARA imza/pattern tarama katmanı yazıldı ve test edildi
