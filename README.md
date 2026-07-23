@@ -87,6 +87,17 @@ streamlit run app.py
 
 Her günün yapılan çalışmaları [`daily_log.md`](./daily_log.md) dosyasında tarih bazında kayıt altına alınmaktadır.
 
+## Literatür Taraması
+
+Ana projeye paralel olarak, akademik bir literatür taraması görevi de yürütülmektedir: proje konusu ve çevresindeki alanlarda 2024–2026 arası yayınlanmış minimum 30 makalenin taranması, değerlendirilmesi ve en az 8 tanesinin kodunun teyit edilmesi.
+
+Bu çalışmanın tüm çıktıları [`/literature-review`](./literature-review) klasöründe yer almaktadır:
+
+- **30 makale** taranmış ve değerlendirilmiştir (2024–2026 aralığında, USENIX Security, ACM CCS, IEEE S&P, NDSS, DFRWS gibi başlıca konferans/dergilerden)
+- **9 makalenin kodu teyit edilmiştir** (hedef: en az 8)
+- Her makale için doldurulmuş "Makale İnceleme Şablonu" dosyaları `/literature-review/articles/` altında bulunmaktadır
+- Kullanılan arama stratejisi ve karşılaştırma tablosu için sırasıyla `arama-stratejisi.md` ve `ozet-karsilastirma-tablosu.md` dosyalarına bakınız
+
 ## Lisans
 
 Bu proje, Spikedge bünyesinde yürütülen staj kapsamında eğitim amaçlı geliştirilmektedir.
