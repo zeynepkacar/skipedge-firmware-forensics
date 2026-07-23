@@ -90,7 +90,7 @@ Pemu'nun temel bileşenleri:
     deneylerinin çalıştırılması için gerekli dosyalar, sonuç dizinleri
     ve bazı bug report'larını içermektedir.
 -   **Kaynak Kod Açık mı?** ☒ Evet ☐ Hayır\
-    **GitHub:** https://github.com/MPI-SysSec/pemu\
+    **GitHub:** https://github.com/MPI-SysSec/pemu
     **Dil:** Python ağırlıklı (%93+), ayrıca Shell ve Dockerfile.
 -   **Tekrarlanabilirlik Notu:** Repository'de SEmu, Fuzzware ve Hoedur
     için kurulum scriptleri ile coverage experiments, bug rediscovery ve
