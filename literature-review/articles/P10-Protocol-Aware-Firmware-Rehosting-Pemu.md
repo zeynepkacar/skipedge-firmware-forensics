@@ -83,14 +83,15 @@ Pemu'nun temel bileşenleri:
     stack'lerini kullanan firmware'ler bulunmaktadır. Pemu; SEmu,
     Fuzzware ve Hoedur tarafından desteklenen firmware örnekleri
     üzerinde baseline karşılaştırmalarıyla değerlendirilmiştir.
--   **Veri Seti Erişilebilir mi?** ☒ Evet ☐ Hayır\
-    **Artifact / Evaluation Data:** https://zenodo.org/records/17035985\
-    Zenodo üzerinde `pemu-ae.zip` adıyla makalenin CCS artifact'ı
-    yayımlanmıştır. Artifact; evaluation ortamı, firmware/rehosting
-    deneylerinin çalıştırılması için gerekli dosyalar, sonuç dizinleri
-    ve bazı bug report'larını içermektedir.
--   **Kaynak Kod Açık mı?** ☒ Evet ☐ Hayır\
+ **Veri Seti Erişilebilir mi?** ☐ Evet ☒ Hayır
+  **Link:** Makalede bağımsız olarak yayımlanmış bir veri seti bağlantısı belirtilmemiştir.
+
+ - **Kaynak Kod Açık mı?** ☒ Evet ☐ Hayır
     **GitHub:** https://github.com/MPI-SysSec/pemu
+
+  - **Artifact Erişilebilir mi?** ☒ Evet ☐ Hayır
+    **Artifact:** https://zenodo.org/records/17035985
+    **DOI:** 10.5281/zenodo.17035985
     **Dil:** Python ağırlıklı (%93+), ayrıca Shell ve Dockerfile.
 -   **Tekrarlanabilirlik Notu:** Repository'de SEmu, Fuzzware ve Hoedur
     için kurulum scriptleri ile coverage experiments, bug rediscovery ve
