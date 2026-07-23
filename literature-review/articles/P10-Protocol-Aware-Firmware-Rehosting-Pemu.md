@@ -29,9 +29,34 @@
 
 ## 3. Veri Seti ve Tekrarlanabilirlik (Reproducibility)
 
+<<<<<<< HEAD
 - **Veri Seti:** Çalışmanın evaluation set'i farklı embedded network stack ve protocol'lerini kullanan firmware örneklerinden oluşmaktadır. Örnekler arasında HTTP Server, UDP Server, TCP Echo Server/Client ve IEEE 802.15.4/6LoWPAN gibi farklı protocol stack'lerini kullanan firmware'ler bulunmaktadır. Pemu; SEmu, Fuzzware ve Hoedur tarafından desteklenen firmware örnekleri üzerinde baseline karşılaştırmalarıyla değerlendirilmiştir.
 - **Veri Seti Erişilebilir mi?** Evet (Artifact/Evaluation Data: https://zenodo.org/records/17035985) — Zenodo üzerinde `pemu-ae.zip` adıyla makalenin CCS artifact'ı yayımlanmıştır. Artifact; evaluation ortamı, firmware/rehosting deneylerinin çalıştırılması için gerekli dosyalar, sonuç dizinleri ve bazı bug report'larını içermektedir.
 - **Kaynak Kod Açık mı?** Evet (Link: https://github.com/MPI-SysSec/pemu) — Dil: Python ağırlıklı (%93+), ayrıca Shell ve Dockerfile. Repository'de SEmu, Fuzzware ve Hoedur için kurulum scriptleri ile coverage experiments, bug rediscovery ve industrial example deneylerini çalıştıran scriptler bulunmaktadır. `scripts/run_experiments.sh` tüm evaluation sürecini çalıştırmak için sağlanmıştır.
+=======
+-   **Veri Seti:** Çalışmanın evaluation set'i farklı embedded network
+    stack ve protocol'lerini kullanan firmware örneklerinden
+    oluşmaktadır. Örnekler arasında HTTP Server, UDP Server, TCP Echo
+    Server/Client ve IEEE 802.15.4/6LoWPAN gibi farklı protocol
+    stack'lerini kullanan firmware'ler bulunmaktadır. Pemu; SEmu,
+    Fuzzware ve Hoedur tarafından desteklenen firmware örnekleri
+    üzerinde baseline karşılaştırmalarıyla değerlendirilmiştir.
+ **Veri Seti Erişilebilir mi?** ☐ Evet ☒ Hayır
+  **Link:** Makalede bağımsız olarak yayımlanmış bir veri seti bağlantısı belirtilmemiştir.
+
+ - **Kaynak Kod Açık mı?** ☒ Evet ☐ Hayır
+    **GitHub:** https://github.com/MPI-SysSec/pemu
+
+  - **Artifact Erişilebilir mi?** ☒ Evet ☐ Hayır
+    **Artifact:** https://zenodo.org/records/17035985
+    **DOI:** 10.5281/zenodo.17035985
+    **Dil:** Python ağırlıklı (%93+), ayrıca Shell ve Dockerfile.
+-   **Tekrarlanabilirlik Notu:** Repository'de SEmu, Fuzzware ve Hoedur
+    için kurulum scriptleri ile coverage experiments, bug rediscovery ve
+    industrial example deneylerini çalıştıran scriptler bulunmaktadır.
+    `scripts/run_experiments.sh` tüm evaluation sürecini çalıştırmak
+    için sağlanmıştır.
+>>>>>>> dd5727cc8d9b3fde243bd2a9d7e87c121142ed7f
 
 ## 4. Proje Kriterleriyle Karşılaştırma
 
