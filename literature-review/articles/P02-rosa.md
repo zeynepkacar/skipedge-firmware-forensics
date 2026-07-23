@@ -71,7 +71,9 @@ Son aşamada tekrar eden raporlar eleniyor ve kalan şüpheli davranışlar
     Tenda/goahead, PHP, ProFTPD ve vsFTPd bulunuyor. Sentetik örnekler
     ise sudo, libpng, libsndfile, libtiff, libxml2, Lua, OpenSSL/bignum,
     PHP/unserialize, Poppler ve SQLite3 üzerinde oluşturulmuş.
--   **Veri Seti Erişilebilir mi?** Evet. ROSARUM açık olarak
+-   **Veri Seti Erişilebilir mi?** Evet.
+    Link: https://github.com/binsec/rosa
+    ROSARUM açık olarak
     yayımlanmış. Her örnek için güvenli program kaynağı, backdoor
     patch'i ve ground-truth patch'i sağlanıyor. Makale ayrıca sonuçların
     yeniden üretilebilmesi için bir replication package yayımlandığını
