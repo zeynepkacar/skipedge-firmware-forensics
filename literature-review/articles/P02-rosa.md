@@ -76,10 +76,13 @@ Son aşamada tekrar eden raporlar eleniyor ve kalan şüpheli davranışlar
     patch'i ve ground-truth patch'i sağlanıyor. Makale ayrıca sonuçların
     yeniden üretilebilmesi için bir replication package yayımlandığını
     belirtiyor.
--   **Kaynak Kod Açık mı?** Evet. ROSA ve ROSARUM GitHub üzerinde
+-   **Kaynak Kod Açık mı?** Evet.
+    **GitHub:** https://github.com/binsec/rosa + https://github.com/binsec/rosarum
+ ROSA ve ROSARUM GitHub üzerinde
     yayımlanmış ve ayrıca Software Heritage üzerinde arşivlenmiş.
     ROSA'nın implementasyonu AFL++ 4.20c ve QEMU üzerinde değişiklikler
     içeriyor.
+    
 
 ## 4. Proje Kriterleriyle Karşılaştırma
 
