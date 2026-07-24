@@ -147,3 +147,41 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 **Notlar / Sonraki Adımlar:**
 - Skorlama katmanı tamamlandı - 6 katmanlı sistemin 5.'si bitti
 - Sırada: zaman çizelgesi (timeline) oluşturma ve delil zinciri (chain of custody, SHA-256 tabanlı) belgeleme katmanı
+
+
+ ## 24.07.2026
+
+**Yapılanlar:**
+
+1. Zaman çizelgesi (timeline) ve delil zinciri (chain of custody) katmanının tasarımı yapıldı
+   - Bu katman, projenin 6. ve son analiz aşamasının bir parçası ("Skorlama ve zaman çizelgesi" - proje önerisindeki 5. katman)
+   - İki ayrı ama birbirine bağlı hedefi var: (a) tüm bulguları okunabilir, kronolojik bir olay listesine dönüştürmek, (b) bu bulguların adli bilişim standartlarına uygun şekilde "delil" olarak korunmasını sağlamak
+
+2. layers/timeline.py modülü yazıldı, 4 ana fonksiyon içeriyor:
+   - `hash_finding()`: bir bulgu kaydını JSON formatına çevirip SHA-256 ile hash'liyor. JSON'ın anahtarları sıralı (sort_keys=True) tutuluyor ki aynı veri her zaman aynı hash'i üretsin, tutarlılık sağlansın
+   - `build_timeline()`: skorlama katmanından gelen ham bulgu listesini alıp her birine bir olay numarası (event_id), zaman damgası (UTC formatında ISO 8601), ve kendi SHA-256 hash'ini ekliyor
+   - `save_timeline()`: oluşturulan timeline'ı reports/timeline.json dosyasına JSON formatında kaydediyor, böylece hem insan tarafından okunabilir hem de ileride raporlama/arayüz katmanında kullanılabilir hale geliyor
+   - `verify_timeline_integrity()`: delil zincirinin bütünlüğünü doğrulayan fonksiyon - her kayıt için hash'i saklanan değerden ayırıp yeniden hesaplıyor, eğer yeniden hesaplanan hash saklanan hash ile eşleşmiyorsa o kaydın sonradan değiştirildiği anlaşılıyor
+
+3. Neden hash tabanlı delil zinciri gerekli - kısaca açıklama:
+   - Adli bilişim çalışmalarında, bir bulgunun mahkemede veya resmi bir incelemede kabul edilebilir olması için "değiştirilmediğinin" kanıtlanabilir olması gerekiyor
+   - SHA-256 hash, bir verinin "parmak izi" gibi çalışıyor - veride tek bir karakter bile değişse, hash tamamen farklı çıkıyor
+   - Bu sayede, ileride biri "bu bulgu sonradan eklendi/değiştirildi" iddiasında bulunursa, hash karşılaştırmasıyla bunun doğru olup olmadığı kesin olarak kanıtlanabiliyor
+
+4. Katman, önceki günlerde tamamlanan skorlama katmanıyla (layers/scoring.py) entegre edilerek uçtan uca test edildi
+   - Script çalıştırıldığında önce tüm 4 analiz katmanı (statik bütünlük, entropi, YARA, izin/yetki) otomatik olarak çalışıyor, skorlama yapılıyor, sonra bu bulgular timeline'a dönüştürülüyor
+   - Test sonucunda önceki günden bilinen 4 bulgu (backdoor dosyası eklenmesi +15, dnsmasq.conf değişikliği +10, YARA backdoor imza eşleşmesi +25, SUID izin değişikliği +25) doğru şekilde timeline'a işlendi, toplam şüphe skoru yine 75/100 olarak doğrulandı
+   - Her olayın kendine özgü, 64 karakterlik bir SHA-256 hash değeri üretildiği gözlemlendi (örnek: usr/bin/update_service dosyasındaki backdoor bulgusu için 8ddf37559ef339e5... ile başlayan hash)
+
+5. Bütünlük doğrulama testi çalıştırıldı
+   - Sonuç: "Integrity check: PASSED" - yani oluşturulan 4 kaydın hiçbiri bozulmamış, tutarlı
+   - Bu, sistemin kendi ürettiği delilleri kendi kendine doğrulayabildiğini gösteren önemli bir kanıt oldu
+
+**Karşılaşılan zorluk:** Bu aşamada teknik bir sorunla karşılaşılmadı - önceki günlerde (binwalk sorunu, entropi eşiği kalibrasyonu, Windows/NTFS SUID kısıtlaması) kurulan sağlam altyapı sayesinde bu katman sorunsuz şekilde entegre oldu. Bu da önceki günlerde yapılan hata ayıklama ve mimari düzeltmelerin (örneğin manifest tabanlı izin sistemine geçiş) ne kadar isabetli olduğunu gösterdi.
+
+**Sonuç:** 6 katmanlı sistemin 5'i tamamlandı: statik bütünlük, entropi analizi, YARA imza tarama, izin/yetki analizi, skorlama + zaman çizelgesi/delil zinciri. Geriye sadece "değerlendirme" (bilinen CVE örnekleriyle doğrulama) ve arayüz (Streamlit) aşamaları kaldı - bunlar sırasıyla 4. haftanın ilk ve ikinci yarısında planlanmıştı.
+
+**Notlar / Sonraki Adımlar:**
+- Zaman çizelgesi ve delil zinciri katmanı tamamlandı ve test edildi
+- Bilinen bir CVE örneğiyle sistemin doğrulanması (değerlendirme aşaması)
+- Ardından Streamlit tabanlı web arayüzüne geçilecek
