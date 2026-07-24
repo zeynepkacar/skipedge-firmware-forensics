@@ -60,18 +60,29 @@ Bu projenin amacı; iki firmware imajı (orijinal ve şüpheli/güncellenmiş) a
 
 ## Kullanım
 
-> Geliştirme ilerledikçe bu bölüm, kurulum adımları ve çalıştırma komutlarıyla güncellenecektir.
+> Streamlit arayüzü henüz geliştirilmedi (4. hafta işi). Şu an her analiz katmanı ayrı ayrı komut satırından çalıştırılabilir.
 
-```bash
+```
 # Depoyu klonlayın
-git clone <repo-url>
-cd <repo-adi>
+git clone https://github.com/zeynepkacar/skipedge-firmware-forensics.git
+cd skipedge-firmware-forensics
 
 # Bağımlılıkları yükleyin
 pip install -r requirements.txt
 
-# Arayüzü başlatın
-streamlit run app.py
+# Firmware imajını hazırlayın (data/raw_firmware altına .img.gz koyup)
+python data/decompress_firmware.py
+python data/extract_squashfs.py
+python data/tamper_firmware.py
+
+# Analiz katmanlarını çalıştırın
+python layers/static_integrity.py
+python layers/entropy_analysis.py
+python layers/yara_scan.py
+python layers/permission_analysis.py
+
+# Skorlama ve zaman çizelgesini görüntüleyin
+python layers/timeline.py
 ```
 
 ## Proje Planı (20 İş Günü)
