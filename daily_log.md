@@ -141,6 +141,7 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
    - Toplam 4 anlamlı bulgu tespit edildi, hepsi daha önce bilinçli olarak eklediğim test senaryosuyla (backdoor dosyası eklenmesi, bir konfigürasyon dosyasının değiştirilmesi, şüpheli SUID izni verilmesi) birebir örtüşüyor
    - Bu, sistemin artık gerçek bir tehdidi doğru tespit edip yanlış alarm vermediğini kanıtlıyor
 
+
 **Karşılaşılan Sorun ve Çözümü (özet):**
 İlk skorlama denemesi ham veriyi doğrudan topladığı için yanlış pozitiflerden etkilendi (skor 100/100 çıktı). Kök neden analiziyle sorunun YARA katmanının normal firmware içeriğini de saydığı tespit edildi. Çözüm olarak YARA katmanına da diğer katmanlarda kullanılan "karşılaştırmalı" (sadece fark olanı say) mantığı uygulandı, skor gerçekçi bir değere (75/100) düştü.
 
@@ -176,7 +177,8 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 5. Bütünlük doğrulama testi çalıştırıldı
    - Sonuç: "Integrity check: PASSED" - yani oluşturulan 4 kaydın hiçbiri bozulmamış, tutarlı
    - Bu, sistemin kendi ürettiği delilleri kendi kendine doğrulayabildiğini gösteren önemli bir kanıt oldu
-
+   
+6. - requirements.txt oluşturuldu, README.md Kullanım bölümü gerçek/güncel komutlarla düzeltildi
 **Karşılaşılan zorluk:** Bu aşamada teknik bir sorunla karşılaşılmadı - önceki günlerde (binwalk sorunu, entropi eşiği kalibrasyonu, Windows/NTFS SUID kısıtlaması) kurulan sağlam altyapı sayesinde bu katman sorunsuz şekilde entegre oldu. Bu da önceki günlerde yapılan hata ayıklama ve mimari düzeltmelerin (örneğin manifest tabanlı izin sistemine geçiş) ne kadar isabetli olduğunu gösterdi.
 
 **Sonuç:** 6 katmanlı sistemin 5'i tamamlandı: statik bütünlük, entropi analizi, YARA imza tarama, izin/yetki analizi, skorlama + zaman çizelgesi/delil zinciri. Geriye sadece "değerlendirme" (bilinen CVE örnekleriyle doğrulama) ve arayüz (Streamlit) aşamaları kaldı - bunlar sırasıyla 4. haftanın ilk ve ikinci yarısında planlanmıştı.
