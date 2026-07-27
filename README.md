@@ -105,7 +105,7 @@ Ana projeye paralel olarak, akademik bir literatür taraması görevi de yürüt
 Bu çalışmanın tüm çıktıları [`/literature-review`](./literature-review) klasöründe yer almaktadır:
 
 - **30 makale** taranmış ve değerlendirilmiştir (2024–2026 aralığında, USENIX Security, ACM CCS, IEEE S&P, NDSS, DFRWS gibi başlıca konferans/dergilerden)
-- **9 makalenin kodu teyit edilmiştir** (hedef: en az 8)
+- **10 makalenin kodu teyit edilmiştir** (hedef: en az 8)
 - Her makale için doldurulmuş "Makale İnceleme Şablonu" dosyaları `/literature-review/articles/` altında bulunmaktadır
 - Kullanılan arama stratejisi ve karşılaştırma tablosu için sırasıyla `arama-stratejisi.md` ve `ozet-karsilastirma-tablosu.md` dosyalarına bakınız
 
