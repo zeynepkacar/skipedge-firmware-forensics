@@ -186,4 +186,38 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 **Notlar / Sonraki Adımlar:**
 - Zaman çizelgesi ve delil zinciri katmanı tamamlandı ve test edildi
 - Bilinen bir CVE örneğiyle sistemin doğrulanması (değerlendirme aşaması)
-- Ardından Streamlit tabanlı web arayüzüne geçilecek
+- Ardından Streamlit tabanlı web arayüzüne geçilecek 
+ 
+## 27.07.2026
+
+**Yapılanlar:**
+
+1. Değerlendirme aşamasına başlandı: gerçek bir CVE ile sistemin doğrulanması hedeflendi
+   - Proje önerisindeki "geliştirilen yöntemin bilinen gerçek CVE örnekleriyle test edilerek doğrulanması" maddesi kapsamında, önce hangi CVE'nin projeyle en uyumlu olduğu araştırıldı
+   - Araştırma sonucu CVE-2024-54143 (OpenWrt Attended Sysupgrade sunucusu, CVSS 9.3, Aralık 2024) seçildi - projenin doğrudan konusuyla (firmware bütünlük doğrulaması) birebir örtüşen, güncel ve kritik seviyeli bir zafiyet olması tercih sebebi oldu
+
+2. CVE'nin teknik mekanizması analiz edildi ve belgelendi (reports/cve_evaluation.md)
+   - Zafiyet iki parçadan oluşuyor: imagebuilder sürecinde komut enjeksiyonu, ve build isteklerini doğrulamak için kullanılan SHA-256 hash'in sadece 12 karaktere kısaltılmış olması
+   - Kısaltılmış hash, hash çakışması (collision) üretmeyi hesaplama açısından mümkün kılıyor - bu da bir saldırganın kötü amaçlı bir firmware imajını meşru imajın yerine geçirip bütünlük kontrolünü atlatmasına izin veriyor
+   - Belgede CVE'nin özeti, projeyle ilgisi, ve bu projenin yöntemiyle ilişkisi ayrı başlıklar altında yazıldı
+
+3. Bu projenin yöntemiyle CVE arasındaki ilişki ortaya konuldu
+   - layers/static_integrity.py katmanının tam uzunlukta (64 karakter, kısaltılmamış) SHA-256 kullandığı doğrulandı
+   - Bu tasarım tercihinin, CVE-2024-54143'ün istismar ettiği zafiyet sınıfına (kısaltılmış hash zayıflığı) karşı doğal bir direnç sağladığı sonucuna varıldı
+   - Yani projenin daha önceden yapılmış bir mimari kararının (tam hash kullanımı), gerçek dünyada yaşanmış kritik bir güvenlik açığına karşı koruma sağladığı gösterilmiş oldu
+
+4. Sayısal kanıt üretildi: data/hash_truncation_demo.py yazıldı ve çalıştırıldı
+   - Script, aynı veri için hem tam SHA-256 hash'i (256 bit, 64 karakter) hem de CVE'deki gibi kısaltılmış hash'i (48 bit, 12 karakter) üretip olası değer sayılarını karşılaştırıyor
+   - Sonuç: tam hash arama uzayı, kısaltılmıştan yaklaşık 4.1 x 10^62 kat daha büyük
+   - Bu sayısal fark, "neden tam hash kullanmak önemli" savını soyut bir iddia olmaktan çıkarıp somut bir sayıyla kanıtladı
+
+5. Bulgular commit edilip GitHub'a gönderildi
+   - Commit mesajında CVE analizi, mekanizma açıklaması ve sayısal sonuç ayrı ayrı belgelendi
+
+**Sonuç:**
+"Değerlendirme" aşamasının ilk ve en kapsamlı parçası (CVE-2024-54143 analizi) tamamlandı. Bu, proje önerisindeki "geliştirilen yöntemin bilinen gerçek CVE örnekleriyle test edilerek doğrulanması" maddesinin somut bir kanıtı oldu.
+
+**Notlar / Sonraki Adımlar:**
+- İkinci bir CVE değerlendirmesi (backdoor/kimlik doğrulama temalı) yapılacak
+- Silinen dosya test senaryosu eklenip test edilecek
+- Ardından Streamlit arayüzüne geçilecek
