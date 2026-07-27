@@ -23,7 +23,7 @@
 
 - **Veri Seti:** Paketlenmiş ve paketlenmemiş çalıştırılabilir dosyalardan oluşan büyük ölçekli bir kıyaslama seti (adversarial örnekler dahil)
 - **Veri Seti Erişilebilir mi?** Evet — kod ile birlikte Zenodo üzerinden paylaşılmış
-- **Kaynak Kod Açık mı?** Evet — Zenodo'da açık bilim deposu olarak yayınlanmış (GitHub değil, kalıcı bir DOI'li açık bilim arşivi)
+- **Kaynak Kod Açık mı?** Evet — https://zenodo.org/records/14091136 (PackALM.zip, 2.6 GB, 12 Kasım 2024) Zenodo'da açık bilim deposu olarak yayınlanmış (GitHub değil, kalıcı bir DOI'li açık bilim arşivi)
 
 ## 4. Proje Kriterleriyle Karşılaştırma
 
