@@ -50,7 +50,6 @@ Bu projenin amacı; iki firmware imajı (orijinal ve şüpheli/güncellenmiş) a
 | FR-7 | Kullanıcı, tüm bulguları delil zinciriyle birlikte PDF/HTML rapor olarak indirebilecektir. |
 | FR-8 | Kullanıcı, her analiz katmanının sonuçlarını arayüzde ayrı sekmelerde inceleyebilecektir. |
 
-## Kullanılacak Teknolojiler
 
 ## Kullanılacak Teknolojiler
 
