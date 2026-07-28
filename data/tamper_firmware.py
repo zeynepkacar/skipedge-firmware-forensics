@@ -52,4 +52,12 @@ with open(suspicious_manifest_path, "w") as f:
     json.dump(permissions, f, indent=2)
 
 print(f"Suspicious permission manifest saved -> {suspicious_manifest_path}")
+# 4. Delete an existing file (simulates an attacker removing evidence,
+# e.g. a monitoring script or a restriction file)
+file_to_delete = os.path.join(suspicious_dir, "etc/shells")
+if os.path.exists(file_to_delete):
+    os.remove(file_to_delete)
+    print(f"Deleted (simulating evidence removal): {file_to_delete}")
+else:
+    print(f"Warning: {file_to_delete} not found, nothing to delete")
 print("\nSimulation complete.")

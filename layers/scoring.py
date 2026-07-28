@@ -18,6 +18,7 @@ from layers.permission_analysis import compare_permissions
 WEIGHTS = {
     "static_added_file": 15,
     "static_modified_file": 10,
+    "static_deleted_file": 20,
     "yara_high_risk": 25,
     "yara_medium_risk": 5,
     "entropy_new_suspicious_file": 15,
@@ -60,6 +61,9 @@ def build_findings_and_score(results):
     for f in results["static"]["modified_files"]:
         findings.append({"layer": "static_integrity", "file": f, "type": "modified_file", "points": WEIGHTS["static_modified_file"]})
         score += WEIGHTS["static_modified_file"]
+    for f in results["static"]["deleted_files"]:
+        findings.append({"layer": "static_integrity", "file": f, "type": "deleted_file", "points": WEIGHTS["static_deleted_file"]})
+        score += WEIGHTS["static_deleted_file"]
 
     # Entropy findings
     for f in results["entropy"]["new_suspicious_files"]:
@@ -90,7 +94,7 @@ def build_findings_and_score(results):
                 "points": WEIGHTS[weight_key],
             })
             score += WEIGHTS[weight_key]
-            
+
     # Permission findings
     for f in results["permission"]["new_suid_or_sgid_files"]:
         findings.append({"layer": "permission", "file": f, "type": "new_suid_sgid", "points": WEIGHTS["permission_new_suid_sgid"]})
