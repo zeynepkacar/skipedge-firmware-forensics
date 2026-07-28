@@ -221,3 +221,37 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 - İkinci bir CVE değerlendirmesi (backdoor/kimlik doğrulama temalı) yapılacak
 - Silinen dosya test senaryosu eklenip test edilecek
 - Ardından Streamlit arayüzüne geçilecek
+
+## 28.07.2026
+
+**Yapılanlar:**
+
+1. İkinci CVE değerlendirmesi yapıldı: CVE-2024-9643 (Four-Faith F3x36 endüstriyel router)
+   - Bu CVE, firmware'e gömülü, sabit (değiştirilemeyen) admin kullanıcı adı/şifre çiftinden kaynaklanıyor - CWE-798 (Hard-coded Credentials) sınıfının gerçek dünyadan bir örneği
+   - reports/cve_evaluation_2.md dosyasında zafiyetin mekanizması ve bu projenin YARA katmanıyla (Hardcoded_Credentials kuralı) ilişkisi belgelendi
+   - Önceki testlerde (2. gün) bu kuralın normal OpenWrt dosyalarında da yanlış pozitif ürettiği dürüstçe not edildi, bunun skorlama katmanındaki karşılaştırmalı mantıkla (sadece yeni eşleşmeleri sayma) kısmen çözüldüğü açıklandı
+
+2. CVE-2024-9643 için pratik bir test yazıldı (data/hardcoded_credential_test.py)
+   - CVE'nin deseniyle uyumlu bir kimlik bilgisi (admin:admin, password=support123) data/suspicious içine eklendi
+   - YARA katmanı çalıştırıldı, test dosyasının Hardcoded_Credentials kuralıyla başarıyla tespit edildiği doğrulandı
+   - Küçük bir script hatası (Windows'ta dosya yolu ayracı farkı nedeniyle "Not detected" yanlış çıktısı) fark edilip düzeltildi
+
+3. Silinen dosya test senaryosu eklendi
+   - tamper_firmware.py güncellendi: mevcut bir dosyanın (etc/shells) silinmesi simüle edildi - bu, bir saldırganın kanıt/iz silmesi senaryosunu temsil ediyor
+   - Bu, statik bütünlük katmanının "silinen dosya" tespit yeteneğinin ilk kez gerçek veriyle test edilmesini sağladı
+
+4. Skorlama katmanı güncellendi (layers/scoring.py)
+   - Silinen dosyalar için yeni bir ağırlık eklendi (static_deleted_file: +20 puan)
+   - Bu ağırlık, ilgili bulgu türü için puanlama mantığına entegre edildi
+
+5. Tüm sistem uçtan uca yeniden test edildi
+   - Final sonuç: 100/100 şüphe skoru, 7 anlamlı bulgu
+   - Bulgular: 2 eklenen dosya (backdoor + hardcoded credential dosyası), 1 değiştirilen dosya, 1 silinen dosya, 2 YARA eşleşmesi, 1 SUID izin değişikliği
+   - Tüm bulgular, bilinçli olarak oluşturulan test senaryosuyla birebir örtüşüyor - yanlış pozitif veya kaçırılan bulgu yok
+
+**Sonuç:**
+"Değerlendirme" aşaması artık tam anlamıyla tamamlandı: proje artık 2 farklı, gerçek ve güncel CVE ile doğrulanmış durumda (CVE-2024-54143: hash kısaltma zafiyeti, CVE-2024-9643: hardcoded credentials), ayrıca tüm manipülasyon türlerini (ekleme, değiştirme, silme, izin değişikliği) kapsayan eksiksiz bir test senaryosu oluşturuldu.
+
+**Notlar / Sonraki Adımlar:**
+- Değerlendirme aşaması tamamlandı (2/2 CVE + tam test senaryosu)
+- Sırada: Streamlit arayüzüne başlama - dosya yükleme, analiz başlatma, özet kartları
