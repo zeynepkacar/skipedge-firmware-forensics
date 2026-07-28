@@ -52,11 +52,14 @@ Bu projenin amacı; iki firmware imajı (orijinal ve şüpheli/güncellenmiş) a
 
 ## Kullanılacak Teknolojiler
 
+## Kullanılacak Teknolojiler
+
 - **Dil:** Python
-- **Statik analiz:** binwalk, hashlib (SHA-256)
+- **Statik analiz:** PySquashfsImage, hashlib (SHA-256)
 - **İmza tarama:** YARA
 - **Arayüz:** Streamlit
 - **Versiyon kontrolü:** Git / GitHub
+
 
 ## Kullanım
 
@@ -84,6 +87,16 @@ python layers/permission_analysis.py
 # Skorlama ve zaman çizelgesini görüntüleyin
 python layers/timeline.py
 ```
+## Analiz Katmanları
+
+| Katman                         | İşlevi                                                                                               | Durum |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- | ----- |
+| 1. Statik Bütünlük             | Dosya/blok seviyesinde SHA-256 hash karşılaştırma; eklenen, silinen, değiştirilen dosyaların tespiti | ✅ |
+| 2. Entropi Analizi             | Firmware bölümlerinin entropi değerleri hesaplanarak gizlenmiş/şifrelenmiş kötü amaçlı kodun tespiti | ✅ |
+| 3. İmza / Pattern Tarama       | YARA kuralları ile bilinen backdoor ve zararlı kod imzalarının taranması                             | ✅ |
+| 4. İzin / Yetki Analizi        | SUID/SGID ve yürütme izinlerindeki şüpheli değişikliklerin tespiti                                   | ✅ |
+| 5. Skorlama ve Zaman Çizelgesi | Tüm katmanlardan gelen bulguların ağırlıklandırılıp tek bir şüphe skoruna dönüştürülmesi             | ✅ |
+| 6. Değerlendirme               | Yöntemin bilinen gerçek CVE örnekleriyle test edilmesi                                               | ✅ |
 
 ## Proje Planı (20 İş Günü)
 
