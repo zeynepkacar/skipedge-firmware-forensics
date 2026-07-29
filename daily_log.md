@@ -255,3 +255,31 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 **Notlar / Sonraki Adımlar:**
 - Değerlendirme aşaması tamamlandı (2/2 CVE + tam test senaryosu)
 - Sırada: Streamlit arayüzüne başlama - dosya yükleme, analiz başlatma, özet kartları
+
+## 29.07.2026
+
+**Yapılanlar:**
+
+1. Streamlit arayüzüne başlandı: dosya yükleme ve analiz başlatma (FR-1, FR-6'nın skor kısmı)
+   - app.py oluşturuldu: iki dosya yükleme alanı (orijinal/şüpheli firmware), "Analizi Başlat" butonu
+   - Yüklenen dosyalar geçici bir dizine kaydedilip gerektiğinde açılıyor (.gz ise), squashfs içeriği çıkarılıyor, tüm analiz katmanları otomatik çalıştırılıyor
+
+2. Mevcut kod, arayüzle uyumlu hale getirmek için yeniden düzenlendi
+   - layers/scoring.py: run_all_layers fonksiyonu artık izin manifest yollarını parametre olarak alabiliyor (öncesinde sabit kodlanmıştı, arayüz farklı geçici dizinler kullandığı için bu değişiklik gerekliydi)
+   - data/extract_squashfs.py: çıkarma mantığı extract_and_save_permissions adında yeniden kullanılabilir bir fonksiyona dönüştürüldü
+
+3. İki teknik sorun tespit edilip çözüldü
+   - Windows'a özgü bir PermissionError oluştu: Streamlit'in geçici dizini temizlerken squashfs imaj dosyasının hâlâ açık tutulması nedeniyle silinemiyordu. Çözüm: SquashFsImage nesnesi işi bitince image.close() ile açıkça kapatılıyor
+   - Bir girinti (indentation) hatası oluştu, dosya tamamen yeniden yazılarak düzeltildi
+
+4. Uçtan uca test yapıldı
+   - Aynı firmware dosyası hem "orijinal" hem "şüpheli" olarak yüklendi
+   - Sonuç: 0/100 şüphe skoru, 0 bulgu, "Düşük Risk" etiketi - iki özdeş dosya arasında fark olmaması beklenen ve doğru bir sonuç
+   - Bu, temel yükleme → analiz → sonuç gösterme akışının uçtan uca çalıştığını doğruladı
+
+**Sonuç:**
+Streamlit arayüzünün ilk parçası (dosya yükleme, analiz tetikleme, özet kartları) tamamlandı ve test edildi. Katman bazlı detaylı görünüm ve zaman çizelgesi için bir bilgilendirme notu arayüze eklendi (henüz geliştirilmedi).
+
+**Notlar / Sonraki Adımlar:**
+- Katman bazlı sekmeler (FR-8) eklenecek - her analiz katmanının kendi bulgu tablosu
+- Zaman çizelgesi ve delil zinciri görünümü eklenecek
