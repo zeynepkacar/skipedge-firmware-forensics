@@ -30,15 +30,19 @@ WEIGHTS = {
 MAX_SCORE = 100
 
 
-def run_all_layers(original_dir, suspicious_dir):
+def run_all_layers(original_dir, suspicious_dir,
+                    original_manifest_path=None, suspicious_manifest_path=None):
     """Runs all four analysis layers and collects raw findings."""
+    if original_manifest_path is None:
+        original_manifest_path = os.path.join(os.path.dirname(original_dir), "original_permissions.json")
+    if suspicious_manifest_path is None:
+        suspicious_manifest_path = os.path.join(os.path.dirname(suspicious_dir), "suspicious_permissions.json")
+
     static_result = compare_firmware(original_dir, suspicious_dir)
     entropy_result = compare_entropy(original_dir, suspicious_dir)
     yara_original = yara_scan_directory(original_dir)
     yara_suspicious = yara_scan_directory(suspicious_dir)
-    permission_result = compare_permissions(
-        "data/original_permissions.json", "data/suspicious_permissions.json"
-    )
+    permission_result = compare_permissions(original_manifest_path, suspicious_manifest_path)
 
     return {
         "static": static_result,

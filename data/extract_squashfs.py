@@ -4,7 +4,6 @@ permission bits like SUID/SGID.
 """
 import json
 import os
-import sys
 from PySquashfsImage import SquashFsImage
 
 image_path = "data/raw_firmware/openwrt-25.12.5-x86-64-generic-squashfs-rootfs.img"
@@ -12,7 +11,11 @@ output_dir = "data/original"
 manifest_path = "data/original_permissions.json"
 
 
-def main():
+def extract_and_save_permissions(image_path, output_dir, manifest_path):
+    """Extracts a squashfs image into output_dir and saves file permission
+    metadata (mode, filemode, uid, gid) into manifest_path as JSON.
+    Returns the number of files extracted.
+    """
     os.makedirs(output_dir, exist_ok=True)
     image = SquashFsImage.from_file(image_path)
 
@@ -42,12 +45,15 @@ def main():
         except Exception as e:
             print(f"Skipped ({entry.path}): {e}")
 
+    image.close()
+
     with open(manifest_path, "w") as f:
         json.dump(permissions, f, indent=2)
 
     print(f"Total {count} files extracted -> {output_dir}")
     print(f"Permission manifest saved -> {manifest_path}")
+    return count
 
 
 if __name__ == "__main__":
-    main()
+    extract_and_save_permissions(image_path, output_dir, manifest_path)
