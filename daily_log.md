@@ -283,3 +283,25 @@ Streamlit arayüzünün ilk parçası (dosya yükleme, analiz tetikleme, özet k
 **Notlar / Sonraki Adımlar:**
 - Katman bazlı sekmeler (FR-8) eklenecek - her analiz katmanının kendi bulgu tablosu
 - Zaman çizelgesi ve delil zinciri görünümü eklenecek
+
+## 30.07.2026
+
+**Yapılanlar:**
+
+1. Streamlit arayüzüne katman bazlı sekmeler eklendi (FR-8)
+   - Özet kartlarının altına 4 ayrı sekme eklendi: Statik Bütünlük, Entropi Analizi, YARA Tarama, İzin/Yetki Analizi
+   - Her sekme, kendi katmanının ham bulgularını (dosya listeleri, tablolar) ayrı ayrı gösteriyor
+
+2. YARA sekmesi için özel bir mantık gerekti
+   - get_new_yara_matches adında bir yardımcı fonksiyon yazıldı - bu, scoring.py'de daha önce kurduğumuz "sadece suspicious'a özgü yeni eşleşmeleri say" mantığını arayüzde de uyguluyor
+   - Bu sayede sekme, normal firmware içeriğinden kaynaklanan eski YARA eşleşmelerini değil, sadece gerçekten yeni/şüpheli olanları gösteriyor
+
+3. Test edildi
+   - Aynı dosya hem orijinal hem şüpheli olarak yüklendi
+   - Sonuç: 4 sekmenin de doğru şekilde "Bulgu yok" gösterdiği doğrulandı, arayüz hatasız çalıştı
+
+**Sonuç:**
+Arayüzün katman bazlı detaylı görünüm kısmı (FR-8) tamamlandı. Artık özet kartları ve katman detayları bir arada çalışıyor.
+
+**Notlar / Sonraki Adımlar:**
+- Zaman çizelgesi (timeline) ve delil zinciri (chain of custody) görünümü eklenecek (FR-6 tamamlanması)
