@@ -85,6 +85,10 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
    - static_integrity.py, entropy_analysis.py, yara_scan.py, tamper_firmware.py, decompress_firmware.py, extract_squashfs.py, generate_test_data.py dosyalarındaki Türkçe yorum satırları ve değişken isimleri İngilizceye çevrildi
    - Bu değişiklik sonrası tüm katmanlar tekrar çalıştırılıp sonuçların değişmediği (sadece dilin değiştiği) doğrulandı
 
+**Literatür Taraması (paralel görev):**
+- Literatür taraması görevine başlandı: proje konusu (firmware bütünlük tespiti / adli bilişim) etrafında Google Scholar üzerinden arama yapıldı
+- İlk 5 makale bulunup DOI ve GitHub kod durumu teyit edildi: P01 FFXE (USENIX Security 2024, kod var), P02 ROSA (ICSE 2025, kod var), P03 AutoFirm (arXiv 2024, kod var), P04 ChkUp (USENIX Security 2024, kod var), P05 MARS (DFRWS 2024, kod paylaşımı yok)
+
 **Notlar / Sonraki Adımlar:**
 - İzin/yetki (SUID/SGID) analiz katmanına geçilecek
 
@@ -115,6 +119,10 @@ Bu dosya, staj süresince her gün yapılan çalışmaları tarih bazında kayı
 **Karşılaşılan Sorun ve Çözümü (özet):**
 Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için canlı dosya sistemi üzerinden izin analizi yapılamadı. Çözüm olarak izin bilgisi, dosya çıkarma anında squashfs imajının kendi meta verisinden okunup ayrı JSON manifest dosyalarında saklanacak şekilde mimari değiştirildi. Bu, adli bilişim açısından da daha doğru bir yöntem oldu çünkü orijinal imaj verisine dayanıyor.
 
+**Literatür Taraması (paralel görev):**
+- Aramaya devam edildi, 5 makale daha bulunup teyit edildi: P06 TELEMETRY/IoT Ecosystems (SN Computer Science 2026, kod yok), P07 Binary Diff Summarization LLM (arXiv 2025, kod yok), P08 SynthChain (arXiv 2026, düşük öncelik), P09 PEMU (ACM CCS 2025, kod var), P10 Out-of-Band Power Side-Channel Detection (arXiv 2026, kod yok)
+- Toplam 10 makale (P01-P10) için aday listesi tamamlandı
+
 **Notlar / Sonraki Adımlar:**
 - 4 analiz katmanı tamamlandı (statik bütünlük, entropi, YARA, izin/yetki)
 - Sırada: skorlama ve zaman çizelgesi katmanı
@@ -144,6 +152,11 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 
 **Karşılaşılan Sorun ve Çözümü (özet):**
 İlk skorlama denemesi ham veriyi doğrudan topladığı için yanlış pozitiflerden etkilendi (skor 100/100 çıktı). Kök neden analiziyle sorunun YARA katmanının normal firmware içeriğini de saydığı tespit edildi. Çözüm olarak YARA katmanına da diğer katmanlarda kullanılan "karşılaştırmalı" (sadece fark olanı say) mantığı uygulandı, skor gerçekçi bir değere (75/100) düştü.
+
+**Literatür Taraması (paralel görev):**
+- P02 (ROSA) için makale inceleme şablonu dolduruldu (5 bölümlü: künye, teknik analiz, veri seti/tekrarlanabilirlik, proje kriterleriyle karşılaştırma, değerlendirme) — uygunluk skoru: 3
+- P10, P12, P13, P14 makaleleri için şablonlar dolduruldu
+- Dosya isimlendirme kuralı belirlendi: PXX dosya adları makale başlığına göre olacak (örn. P14-Multi-Interface-Firmware-Acquisition-and-Validation.md)
 
 **Notlar / Sonraki Adımlar:**
 - Skorlama katmanı tamamlandı - 6 katmanlı sistemin 5.'si bitti
@@ -182,6 +195,9 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 **Karşılaşılan zorluk:** Bu aşamada teknik bir sorunla karşılaşılmadı - önceki günlerde (binwalk sorunu, entropi eşiği kalibrasyonu, Windows/NTFS SUID kısıtlaması) kurulan sağlam altyapı sayesinde bu katman sorunsuz şekilde entegre oldu. Bu da önceki günlerde yapılan hata ayıklama ve mimari düzeltmelerin (örneğin manifest tabanlı izin sistemine geçiş) ne kadar isabetli olduğunu gösterdi.
 
 **Sonuç:** 6 katmanlı sistemin 5'i tamamlandı: statik bütünlük, entropi analizi, YARA imza tarama, izin/yetki analizi, skorlama + zaman çizelgesi/delil zinciri. Geriye sadece "değerlendirme" (bilinen CVE örnekleriyle doğrulama) ve arayüz (Streamlit) aşamaları kaldı - bunlar sırasıyla 4. haftanın ilk ve ikinci yarısında planlanmıştı.
+
+**Literatür Taraması (paralel görev):**
+- P11-P15 arası makalelerin araştırması ve teyidi tamamlandı: P12 (hafif hash fonksiyonları ile IoT secure boot), P13 (SIMON tabanlı paralel hash fonksiyonu), P14 (drone firmware çok arayüzlü doğrulama), P15 (ELF header tabanlı IoT malware tespiti)
 
 **Notlar / Sonraki Adımlar:**
 - Zaman çizelgesi ve delil zinciri katmanı tamamlandı ve test edildi
@@ -252,6 +268,15 @@ Windows/NTFS dosya sistemi Unix izin bitlerini (SUID/SGID) desteklemediği için
 **Sonuç:**
 "Değerlendirme" aşaması artık tam anlamıyla tamamlandı: proje artık 2 farklı, gerçek ve güncel CVE ile doğrulanmış durumda (CVE-2024-54143: hash kısaltma zafiyeti, CVE-2024-9643: hardcoded credentials), ayrıca tüm manipülasyon türlerini (ekleme, değiştirme, silme, izin değişikliği) kapsayan eksiksiz bir test senaryosu oluşturuldu.
 
+**Literatür Taraması (paralel görev):**
+- P15-P20 arası 6 makale için inceleme şablonları dolduruldu
+- P21-P30 arası 10 makale için inceleme şablonları dolduruldu — toplam 30 makalelik hedef tamamlandı
+- Özet Karşılaştırma Tablosu (30 makale) ve Arama Stratejisi belgesi dolduruldu
+- Gap analizi çıkarıldı: diferansiyel analiz (A/B) sadece 1/30 makalede, delil zinciri sadece 4/30 makalede, tek şüphe skoru sadece 5/30 makalede mevcut
+- Kod teyidi tamamlanan 10 makale netleşti: FFXE, ROSA, AutoFirm, ChkUp, PEMU, FirmRCA, UEFI Memory Forensics, UniBOM, LFwC, Pack-ALM
+- GitHub reposu içinde /literature-review/ klasörü oluşturuldu (articles/ alt klasörü + özet tablo + arama stratejisi), README'ye literatür taraması bölümü eklendi
+- P01-P30 dosyaları ile özet tablodaki uygunluk skorları karşılaştırılıp 11 makaledeki uyuşmazlık tespit edilip düzeltildi
+
 **Notlar / Sonraki Adımlar:**
 - Değerlendirme aşaması tamamlandı (2/2 CVE + tam test senaryosu)
 - Sırada: Streamlit arayüzüne başlama - dosya yükleme, analiz başlatma, özet kartları
@@ -303,6 +328,11 @@ Streamlit arayüzünün ilk parçası (dosya yükleme, analiz tetikleme, özet k
 **Sonuç:**
 Arayüzün katman bazlı detaylı görünüm kısmı (FR-8) tamamlandı. Artık özet kartları ve katman detayları bir arada çalışıyor.
 
+**Literatür Taraması (paralel görev):**
+- 2. hafta Colab çalışması için ortam kararı verildi: donanım kısıtı nedeniyle yerel kurulum yerine Google Colab kullanılacak
+- 10 kodlu makaleye hakim olmak için çalışma stratejisi belirlendi (Study Guide + Audio Overview kombinasyonu)
+- 10 kodlu makale için karşılaştırmalı bir özet doküman hazırlandı (çözdüğü problem, girdi formatı, bağımlılıklar, sınırlamalar, metodolojik fark başlıklarıyla)
+
 **Notlar / Sonraki Adımlar:**
 - Zaman çizelgesi (timeline) ve delil zinciri (chain of custody) görünümü eklenecek (FR-6 tamamlanması)
 
@@ -334,5 +364,31 @@ Arayüzün katman bazlı detaylı görünüm kısmı (FR-8) tamamlandı. Artık 
 **Sonuç:**
 FR-6 gereksinimi tamamen tamamlandı. Arayüzün üç ana parçası (yükleme, katman sekmeleri, zaman çizelgesi/delil zinciri) birlikte çalışıyor ve her katman kendini açıklıyor.
 
+**Literatür Taraması (paralel görev):**
+
+1. 2. hafta Colab çalışmasına başlandı, Colab temelleri (cell, runtime, Drive bağlama) öğrenildi
+
+2. İlk kodlu makale FFXE Colab'a kuruldu: GitHub'dan klonlandı, bağımlılıklar pip ile kuruldu (conda'ya gerek kalmadan), geliştirici modunda (`pip install -e .`) kuruldu
+   - FFXE'nin kendi veri setiyle (9 gerçek örnek: ChargeHR, Flex, Switchmate cihazları) baseline testi yapıldı: `tests/test-real.py` ile 9/9 örnek hatasız çalıştı, sonuçlar (blocks/edges/elapsed süre) JSON olarak üretildi ve Google Drive'a kaydedildi (/content/drive/MyDrive/literatur-colab/FFXE/)
+
+3. Reproduction sırası belirlendi: P01 (FFXE) tamamlandı → P02 (ROSA) şimdilik atlandı → P03 (AutoFirm) → P04 (ChkUp) → P10 (PEMU) → P17 (UEFI Memory Forensics) → P20 (FirmRCA) → P25 (LFwC) → P28 (UniBOM) → P29 (Pack-ALM)
+
+4. P03 (AutoFirm, github.com/sure17/AutoFirm) test edildi
+   - Makalenin kullandığı LFwC veri setine gerçek erişim mümkün olmadı (354GB, akademik başvuru gerekiyor) — bunun yerine OpenWrt'nin resmi sitesinden küçük bir MIPS router firmware'i (TP-Link Archer A6 v3, OpenWrt 23.05.5) indirilip kullanıldı
+   - binwalk (imp modülü + --run-as=root düzeltmeleri sonrası) ve qemu-mipsel ile 53 ELF binary bulundu, emülasyon gerçekten çalıştı (loglarda gerçek help/versiyon çıktıları görüldü)
+   - Ancak AutoFirm'in regex tabanlı versiyon çıkarma mantığı OpenWrt binary'lerinin çoğunda eşleşme bulamadı (çoğu --version bayrağını desteklemiyor, opkg git-hash formatında versiyon veriyor)
+   - Bulgu olarak not edildi: araç klasik vendor firmware regex'lerine göre tasarlanmış, modern/minimal Linux dağıtımlarında genelleşmiyor
+
+5. P04 (ChkUp, github.com/WUSTL-CSPL/ChkUp) denendi
+   - Ghidra 10.1.2 + Java 11 + Python 3.6 zorunluluğu Colab'ın güncel Python'uyla uyumsuz olduğundan (eski paket derleme riski yüksek), P02 (ROSA) gibi sona bırakılıp P10'a (PEMU) geçildi
+
+6. P10 (PEMU, github.com/MPI-SysSec/pemu) test edildi
+   - Tam fuzzing kampanyası (Docker/SEmu/Fuzzware/Hoedur) kurmadan, `src/packer.py` içindeki çekirdek `Packer` sınıfı izole edilip doğrudan çağrıldı
+   - `eval/01-coverage-experiments/stm32_f429/LwIP_TCP_Echo_Client/hoedur_config.yml` dosyasından gerçek config/apriori/protocols formatı örnek alındı, Ethernet+ARP protokol zinciriyle `packer.get_packet(['Ethernet','ARP'])` çağrıldı
+   - Sonuç: başarılı — 42 byte'lık, yapısal olarak doğru bir Ethernet+ARP çerçevesi üretildi (broadcast MAC ff:ff:ff:ff:ff:ff + doğru ethertype 0x0806), PEMU'nun protokol farkındalıklı paket üretme motoru doğrulandı
+
+7. Takip tablosu oluşturuldu: literatur-arac-sonuc-tablosu.xlsx (sütunlar: P#, Araç, Veri Seti, Durum, Çalıştı mı, Ana Metrik, Süre, Not) — her araç bitince güncellenecek, sonunda grafik için kaynak olacak
+
 **Notlar / Sonraki Adımlar:**
 - PDF/HTML rapor çıktısı eklenecek (FR-7)
+- Literatür tarafında sırada: P02 (ROSA) ve P04 (ChkUp) için tekrar deneme ya da alternatif yaklaşım, ardından P17, P20, P25, P28, P29
