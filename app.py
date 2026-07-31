@@ -2,7 +2,9 @@
 Streamlit web interface for the firmware forensics toolkit.
 Day 8: file upload + analysis trigger + summary cards.
 Day 9: per-layer tabs (FR-8).
+Day 10: timeline + chain of custody, layer descriptions.
 """
+from layers.timeline import build_timeline, verify_timeline_integrity
 import os
 import shutil
 import tempfile
@@ -86,6 +88,14 @@ def get_new_yara_matches(results):
     return new_matches
 
 
+LAYER_DESCRIPTIONS = {
+    "static": "İki firmware arasında dosya ve blok seviyesinde SHA-256 hash karşılaştırması yapar. Eklenen, silinen ve içeriği değiştirilen dosyaları tespit eder. En kesin ve tartışmasız kanıt türüdür.",
+    "entropy": "Dosyaları küçük bloklara bölüp her bloğun rastgelelik (entropi) değerini hesaplar. Şifrelenmiş veya gizlenmiş kod genelde yüksek entropili olur. Tek başına zayıf bir sinyaldir, düz metin kod içeren tehditleri kaçırabilir.",
+    "yara": "Firmware dosyalarını bilinen backdoor ve zararlı kod imzalarına (örneğin 'reverse_shell', 'admin:admin' gibi ifadeler) karşı tarar. Sadece orijinalde bulunmayan, suspicious'a özgü yeni eşleşmeler gösterilir.",
+    "permission": "Dosya izinlerindeki şüpheli değişiklikleri, özellikle SUID/SGID biti eklenmesini tespit eder. Saldırganlar kalıcı erişim sağlamak için genelde masum görünen bir dosyaya bu tür izinler ekler.",
+}
+
+
 if analyze_clicked:
     with st.spinner("Analiz çalışıyor, bu birkaç dakika sürebilir..."):
         with tempfile.TemporaryDirectory() as work_dir:
@@ -130,6 +140,7 @@ if "last_score" in st.session_state:
     )
 
     with tab_static:
+        st.info(LAYER_DESCRIPTIONS["static"])
         static_result = results["static"]
         st.write(f"**Eklenen dosyalar** ({len(static_result['added_files'])})")
         if static_result["added_files"]:
@@ -150,6 +161,7 @@ if "last_score" in st.session_state:
             st.caption("Bulgu yok.")
 
     with tab_entropy:
+        st.info(LAYER_DESCRIPTIONS["entropy"])
         entropy_result = results["entropy"]
         changed = entropy_result["changed_entropy_files"]
         new_files = entropy_result["new_suspicious_files"]
@@ -167,6 +179,7 @@ if "last_score" in st.session_state:
             st.caption("Bulgu yok.")
 
     with tab_yara:
+        st.info(LAYER_DESCRIPTIONS["yara"])
         yara_matches = get_new_yara_matches(results)
         st.write(f"**Yeni YARA eşleşmeleri** ({len(yara_matches)})")
         if yara_matches:
@@ -175,6 +188,7 @@ if "last_score" in st.session_state:
             st.caption("Bulgu yok.")
 
     with tab_permission:
+        st.info(LAYER_DESCRIPTIONS["permission"])
         permission_result = results["permission"]
         new_suid = permission_result["new_suid_or_sgid_files"]
         changed_perms = permission_result["permission_changes"]
@@ -194,4 +208,26 @@ if "last_score" in st.session_state:
         else:
             st.caption("Bulgu yok.")
 
-    st.info("Zaman çizelgesi ve delil zinciri görünümü yakında eklenecek.")
+    st.divider()
+    st.subheader("Zaman Çizelgesi ve Delil Zinciri")
+
+    timeline = build_timeline(findings)
+    integrity_ok = verify_timeline_integrity(timeline)
+
+    if integrity_ok:
+        st.success("Delil bütünlüğü doğrulandı: tüm kayıtlar orijinal, değiştirilmemiş.")
+    else:
+        st.error("Delil bütünlüğü doğrulanamadı: bir veya daha fazla kayıt değiştirilmiş olabilir.")
+
+    if timeline:
+        timeline_table = {
+            "Sıra": [e["event_id"] for e in timeline],
+            "Katman": [e["layer"] for e in timeline],
+            "Dosya": [e["file"] for e in timeline],
+            "Bulgu Türü": [e["finding_type"] for e in timeline],
+            "Puan": [e["points"] for e in timeline],
+            "Delil Hash (SHA-256)": [e["evidence_hash"][:16] + "..." for e in timeline],
+        }
+        st.table(timeline_table)
+    else:
+        st.caption("Zaman çizelgesinde gösterilecek bulgu yok.")

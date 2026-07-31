@@ -305,3 +305,34 @@ Arayüzün katman bazlı detaylı görünüm kısmı (FR-8) tamamlandı. Artık 
 
 **Notlar / Sonraki Adımlar:**
 - Zaman çizelgesi (timeline) ve delil zinciri (chain of custody) görünümü eklenecek (FR-6 tamamlanması)
+
+## 31.07.2026
+
+**Yapılanlar:**
+
+1. Streamlit arayüzüne zaman çizelgesi ve delil zinciri (chain of custody) görünümü eklendi - bu, FR-6 gereksiniminin son parçasıydı (bulguların kronolojik zaman çizelgesi ve şüphe skoru olarak gösterilmesi)
+
+2. layers/timeline.py'deki iki fonksiyon arayüze bağlandı:
+   - build_timeline(findings): scoring katmanından gelen ham bulgu listesini, her biri sıra numarası, zaman damgası ve kendi SHA-256 hash'i taşıyan olay kayıtlarına dönüştürüyor
+   - verify_timeline_integrity(timeline): her kaydın hash'ini yeniden hesaplayıp saklanan hash ile karşılaştırıyor, tüm kayıtlar tutarlıysa True dönüyor
+
+3. Zaman çizelgesi tablosu tasarlandı ve eklendi
+   - Sütunlar: Sıra, Katman, Dosya, Bulgu Türü, Puan, Delil Hash (SHA-256, ilk 16 karakter + "..." şeklinde kısaltılmış)
+   - Bulgu yoksa "Zaman çizelgesinde gösterilecek bulgu yok" mesajı gösteriliyor
+
+4. Delil bütünlüğü doğrulama sonucu görsel olarak arayüze yansıtıldı
+   - Doğrulama başarılıysa yeşil kutuda "Delil bütünlüğü doğrulandı" mesajı, başarısızsa kırmızı kutuda uyarı
+
+5. Arayüze katman açıklamaları eklendi
+   - Her sekmenin (Statik Bütünlük, Entropi, YARA, İzin/Yetki) en üstüne, o katmanın ne yaptığını ve neden önemli olduğunu açıklayan bir bilgi kutusu eklendi
+   - Amaç: arayüzü kullanan birinin teknik detaya girmeden her sekmenin işlevini anlayabilmesi
+
+6. Test edildi
+   - Aynı firmware dosyası hem orijinal hem şüpheli olarak yüklendi
+   - Sonuç: "Delil bütünlüğü doğrulandı" mesajı doğru çıktı, tüm sekmelerde açıklama kutuları görüntülendi, arayüz hatasız çalıştı
+
+**Sonuç:**
+FR-6 gereksinimi tamamen tamamlandı. Arayüzün üç ana parçası (yükleme, katman sekmeleri, zaman çizelgesi/delil zinciri) birlikte çalışıyor ve her katman kendini açıklıyor.
+
+**Notlar / Sonraki Adımlar:**
+- PDF/HTML rapor çıktısı eklenecek (FR-7)
