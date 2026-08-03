@@ -419,6 +419,26 @@ FR-6 gereksinimi tamamen tamamlandı. Arayüzün üç ana parçası (yükleme, k
 **Sonuç:**
 Delil zinciri kavramı artık hem arayüzde hem rapor çıktısında yanlış anlaşılmaya daha az açık şekilde ifade ediliyor. Proje, kuruluşundan bu yana ilk kez gerçek ölçekte (binlerce dosyalık fark) uçtan uca test edilmiş oldu; bu, önceki testlerin sadece "boş senaryo"yu doğruladığı, bugünün testinin ise "dolu senaryo"yu doğruladığı anlamına geliyor.
 
+
+ **Literatür Taraması (paralel görev):**
+ 1. P17 (UEFI Memory Forensics, github.com/UefiMemAnalysis/UefiMemAnalysis) test edildi
+Kurulum sorunsuz geçti (pip install -e .)
+Gerçek QEMU+OVMF+Windows guest dump'ı bugün için gerçekçi olmadığından, aracın kaynak kodundaki gerçek imza/offset değerleri (SIGNATURE=b'ldri' ve ilgili offsetler) kullanılarak elle minimal, yapısal olarak geçerli sentetik bir UEFI bellek dökümü inşa edildi
+uefi_image_carving modülü bu sentetik dump üzerinde çalıştırıldı: sonuç başarılı — 1/1 sinyal doğru tespit edildi, tüm doğrulama adımları (revizyon, sistem tablosu, boyut kontrolleri) geçti, 0 red — aracın imza tarama + doğrulama mantığı doğrulandı
+2. P20 (FirmRCA, github.com/NESA-Lab/FirmRCA) test edildi
+capstone (belirtilen commit) + uv ortamı + C projesi (autogen/configure/make) sorunsuz derlendi
+Hazır demo veri seti (testsuites-demo.zip: p2im-12, p2im-22, zephyr-54) kullanıldı
+p2im-12 test case'i çalıştırıldı: ~25 dakika (1501.9 saniye) süren bir analizin ardından başarıyla tamamlandı — 168.542 komutluk tersine yürütme yapıldı, 53 taintli komut + 8 dallanma + 69 taint çifti tespit edildi, gerçek adres/assembly çıktısıyla kök neden analizi üretildi
+3. P28 (UniBOM, github.com/nqminds/UniBOM) test edildi
+Aracın gerektirdiği tam Docker Compose kurulumu (5 container) yerine, arkasında kullandığı çekirdek motorlar (syft + grype) Docker'sız, bağımsız binary olarak kuruldu
+OpenWrt dosya sistemi üzerinde syft çalıştırıldı — 338 bileşen (SBOM) tespit edildi
+Aynı SBOM üzerinde grype ile CVE taraması yapıldı — 8 zafiyet bulundu (1 kritik, 5 orta, 2 düşük) — SBOM üretme + zafiyet tarama pipeline'ı uçtan uca doğrulandı
+4. 2. hafta reproduction durumu: 10 araçtan 7'si tamamlandı (FFXE, AutoFirm, PEMU, UEFI Memory Forensics, FirmRCA, UniBOM), 2'si ertelendi (ROSA: Docker/AFL++ derleme yükü; ChkUp: Ghidra+Python 3.6 uyumsuzluğu), 1'i (Pack-ALM) kaldı
+Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ve tüm Colab not defterleri GitHub'a yüklendi
+
+Sonuç:
+Literatür taraması paralel görevinde 2. hafta reproduction çalışması büyük ölçüde tamamlandı — 7/10 araç gerçek çalıştırmayla doğrulandı, kalan 1 araç (Pack-ALM) ve ertelenen 2 araç için (ROSA, ChkUp) sonraki adım netleşti.
+
 **Notlar / Sonraki Adımlar:**
 - Arayüz görsel iyileştirme ve hata yönetimi (12. gün)
 - Uçtan uca entegrasyon testi (13. gün)
