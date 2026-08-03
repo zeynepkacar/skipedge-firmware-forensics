@@ -3,8 +3,10 @@ Streamlit web interface for the firmware forensics toolkit.
 Day 8: file upload + analysis trigger + summary cards.
 Day 9: per-layer tabs (FR-8).
 Day 10: timeline + chain of custody, layer descriptions.
+Day 11: HTML report export (FR-7), clarified integrity messaging.
 """
 from layers.timeline import build_timeline, verify_timeline_integrity
+from reports.report_generator import build_html_report
 import os
 import shutil
 import tempfile
@@ -209,15 +211,15 @@ if "last_score" in st.session_state:
             st.caption("Bulgu yok.")
 
     st.divider()
-    st.subheader("Zaman Çizelgesi ve Delil Zinciri")
+    st.subheader("Zaman Çizelgesi ve Delil Zinciri (Rapor Kayıtlarının Bütünlüğü)")
 
     timeline = build_timeline(findings)
     integrity_ok = verify_timeline_integrity(timeline)
 
     if integrity_ok:
-        st.success("Delil bütünlüğü doğrulandı: tüm kayıtlar orijinal, değiştirilmemiş.")
+        st.success("Rapor kayıtlarının bütünlüğü doğrulandı: bu bulgular araç tarafından üretildiği haliyle duruyor, sonradan değiştirilmemiş. (Not: bu, firmware'in güvenli olduğu anlamına gelmez — sadece bu rapordaki kayıtların tahrif edilmediğini gösterir.)")
     else:
-        st.error("Delil bütünlüğü doğrulanamadı: bir veya daha fazla kayıt değiştirilmiş olabilir.")
+        st.error("Rapor kayıtlarının bütünlüğü doğrulanamadı: bir veya daha fazla kayıt sonradan değiştirilmiş olabilir.")
 
     if timeline:
         timeline_table = {
@@ -231,3 +233,16 @@ if "last_score" in st.session_state:
         st.table(timeline_table)
     else:
         st.caption("Zaman çizelgesinde gösterilecek bulgu yok.")
+
+    st.divider()
+    st.subheader("Rapor Çıktısı")
+
+    report_html = build_html_report(score, risk_label, findings, timeline, integrity_ok)
+
+    st.download_button(
+        label="Raporu İndir (HTML)",
+        data=report_html,
+        file_name="firmware_forensics_report.html",
+        mime="text/html",
+    )
+    st.caption("İndirilen HTML dosyasını tarayıcıda açıp Ctrl+P ile PDF olarak da kaydedebilirsiniz.")

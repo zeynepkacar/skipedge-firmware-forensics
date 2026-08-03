@@ -392,3 +392,33 @@ FR-6 gereksinimi tamamen tamamlandı. Arayüzün üç ana parçası (yükleme, k
 **Notlar / Sonraki Adımlar:**
 - PDF/HTML rapor çıktısı eklenecek (FR-7)
 - Literatür tarafında sırada: P02 (ROSA) ve P04 (ChkUp) için tekrar deneme ya da alternatif yaklaşım, ardından P17, P20, P25, P28, P29
+
+## 03.08.2026
+
+**Yapılanlar:**
+
+1. Delil zinciri bütünlük mesajlarının netleştirilmesi
+   - Önceki günlerde eklenen "Delil Zinciri Bütünlüğü: Doğrulandı" mesajı, yüksek şüphe skoruyla (örneğin 100/100, Yüksek Risk) aynı ekranda göründüğünde yanlış anlaşılmaya açık bir ifadeydi - "doğrulandı" kelimesi, firmware'in güvenli olduğu izlenimini verebiliyordu
+   - Ayrım netleştirildi: Şüphe Skoru ve Risk Seviyesi firmware'in kendisiyle ilgili bir değerlendirme; Delil Zinciri Bütünlüğü ise aracın ürettiği bulgu kayıtlarının sonradan değiştirilip değiştirilmediğiyle ilgili, tamamen ayrı bir kontrol
+   - app.py'deki başarı mesajına şu netleştirici not eklendi: "(Not: bu, firmware'in güvenli olduğu anlamına gelmez — sadece bu rapordaki kayıtların tahrif edilmediğini gösterir.)"
+   - reports/report_generator.py'deki HTML rapor metni aynı mantıkla güncellendi
+   - Hem arayüzdeki hem HTML rapordaki başlık "Delil Zinciri Bütünlüğü"nden "Rapor Kayıtlarının Bütünlüğü (Delil Zinciri)"ne çevrildi
+
+2. Değişiklik sırasında oluşan teknik sorunun giderilmesi
+   - Metin güncellemesi yapılırken app.py dosyasında bir IndentationError oluştu (satır 218, "unindent does not match any outer indentation level")
+   - Dosyanın tamamı yeniden yazılarak (mevcut tüm fonksiyonlar, sekmeler, rapor bölümü korunarak) hata giderildi
+
+3. Arayüzün ilk kez gerçek ölçekte, dolu bir senaryoyla test edilmesi
+   - Şimdiye kadar yapılan tüm arayüz testleri "aynı dosyayı hem orijinal hem şüpheli olarak yükle" şeklindeydi, bu da her zaman 0 bulgu ve düşük risk sonucu veriyordu - yani arayüzün yoğun/gerçek bir bulgu listesini nasıl işlediği hiç görülmemişti
+   - Bugün iki farklı gerçek OpenWrt sürümü (daha eski bir sürüm ve elimizdeki mevcut 25.12.5 sürümü) sırasıyla "Orijinal" ve "Şüpheli" alanlarına yüklendi
+   - Sonuç: 100/100 şüphe skoru, 1337 bulgu, "Yüksek Risk" etiketi - iki farklı OpenWrt sürümü arasında beklenen, gerçek ve yoğun bir dosya farkı
+   - Bu test, hem katman sekmelerinin hem zaman çizelgesi tablosunun hem de HTML rapor çıktısının yüzlerce/binlerce satırlık gerçek bir bulgu listesini hatasız şekilde işleyip görüntüleyebildiğini doğruladı - önceki testlerde bu ölçek hiç denenmemişti
+
+4. Güncellenmiş mesajlarla birlikte sistemin tamamı tekrar test edildi, hatasız çalıştığı doğrulandı
+
+**Sonuç:**
+Delil zinciri kavramı artık hem arayüzde hem rapor çıktısında yanlış anlaşılmaya daha az açık şekilde ifade ediliyor. Proje, kuruluşundan bu yana ilk kez gerçek ölçekte (binlerce dosyalık fark) uçtan uca test edilmiş oldu; bu, önceki testlerin sadece "boş senaryo"yu doğruladığı, bugünün testinin ise "dolu senaryo"yu doğruladığı anlamına geliyor.
+
+**Notlar / Sonraki Adımlar:**
+- Arayüz görsel iyileştirme ve hata yönetimi (12. gün)
+- Uçtan uca entegrasyon testi (13. gün)
