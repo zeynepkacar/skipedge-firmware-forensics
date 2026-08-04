@@ -441,4 +441,35 @@ Literatür taraması paralel görevinde 2. hafta reproduction çalışması büy
 
 **Notlar / Sonraki Adımlar:**
 - Arayüz görsel iyileştirme ve hata yönetimi (12. gün)
-- Uçtan uca entegrasyon testi (13. gün)
+- Uçtan uca entegrasyon testi (13. gün) 
+
+## 04.08.2026
+
+**Yapılanlar:**
+
+1. Analiz akışına hata yönetimi eklendi
+   - app.py'deki analiz bloğu try/except yapısıyla sarıldı
+   - Hata durumunda (örneğin geçersiz/bozuk bir dosya yüklendiğinde) uygulama çökmek yerine kırmızı bir hata kutusunda anlaşılır bir mesaj gösteriyor: "Analiz sırasında bir hata oluştu. Yüklenen dosyaların geçerli bir squashfs imajı olduğundan emin olun."
+   - Teknik hata detayı (exception ve traceback) st.exception ile katlanabilir şekilde sunuluyor, isteyen inceleyebiliyor
+   - Hata durumunda önceki analiz sonuçları (varsa) session state'ten temizleniyor, eski/yanıltıcı sonuçların ekranda kalması önleniyor
+   - Başarılı analiz sonrası küçük bir bildirim balonu (toast) eklendi
+
+2. Arayüze sol panel (sidebar) eklendi
+   - Proje başlığı, kısa açıklama, 6 analiz katmanının listesi ve GitHub repo linkini içeriyor
+   - Amaç: arayüzü ilk kez gören birinin projeyi tanıması için ek bağlam sağlamak
+
+3. Boş durum mesajı eklendi
+   - Hiç dosya yüklenmemiş durumda, kullanıcıyı yönlendiren bir bilgi kutusu gösteriliyor
+
+4. Hata yönetimi kasıtlı olarak test edildi
+   - Bir .txt dosyasının uzantısı .img olarak değiştirilip "Şüpheli Firmware" alanına yüklendi
+   - Sonuç: uygulama çökmedi, beklenen hata mesajı doğru şekilde gösterildi, teknik detay (PermissionError, squashfs açma hatası zincirinden kaynaklanan) traceback içinde görüntülendi
+
+5. Normal senaryo tekrar test edildi
+   - Geçerli firmware dosyalarıyla analiz akışının, hata yönetimi eklendikten sonra da sorunsuz çalıştığı doğrulandı
+
+**Sonuç:**
+Arayüz artık geçersiz girdilere karşı dayanıklı ve kullanıcıyı daha iyi yönlendiren bir yapıya kavuştu. Görsel/bağlamsal iyileştirmelerle (sidebar, boş durum mesajı) birlikte arayüz daha profesyonel bir görünüme ulaştı.
+
+**Notlar / Sonraki Adımlar:**
+- Uçtan uca entegrasyon testi (13. gün) - tüm sistemin sıfırdan, temiz bir ortamda baştan sona test edilmesi

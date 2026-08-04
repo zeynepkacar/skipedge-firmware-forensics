@@ -19,6 +19,26 @@ from data.extract_squashfs import extract_and_save_permissions
 
 st.set_page_config(page_title="Firmware Forensics Toolkit", layout="wide")
 
+with st.sidebar:
+    st.header("Proje Hakkında")
+    st.markdown(
+        """
+        **Gömülü Sistem Firmware'lerinde Çok Katmanlı
+        Bütünlük İhlali Tespiti ve Adli Bilişim Analizi**
+
+        Spikedge staj projesi kapsamında geliştirilmiştir.
+
+        **6 Analiz Katmanı:**
+        1. Statik Bütünlük
+        2. Entropi Analizi
+        3. YARA İmza Tarama
+        4. İzin/Yetki Analizi
+        5. Skorlama ve Zaman Çizelgesi
+        6. Değerlendirme (CVE testleri)
+        """
+    )
+    st.divider()
+    st.caption("[GitHub Reposu](https://github.com/zeynepkacar/skipedge-firmware-forensics)")
 st.title("Firmware Bütünlük İhlali Tespit Aracı")
 st.caption("Çok katmanlı adli bilişim analiz sistemi — Spikedge staj projesi")
 
@@ -45,6 +65,8 @@ analyze_clicked = st.button(
     type="primary",
     disabled=not (original_file and suspicious_file),
 )
+if not (original_file and suspicious_file):
+    st.info("Analize başlamak için hem orijinal hem şüpheli firmware imajını yükleyin.")
 
 
 def save_and_prepare(uploaded_file, work_dir, label):
@@ -99,23 +121,35 @@ LAYER_DESCRIPTIONS = {
 
 
 if analyze_clicked:
-    with st.spinner("Analiz çalışıyor, bu birkaç dakika sürebilir..."):
-        with tempfile.TemporaryDirectory() as work_dir:
-            original_dir, original_manifest = save_and_prepare(
-                original_file, work_dir, "original"
-            )
-            suspicious_dir, suspicious_manifest = save_and_prepare(
-                suspicious_file, work_dir, "suspicious"
-            )
+    try:
+        with st.spinner("Analiz çalışıyor, bu birkaç dakika sürebilir..."):
+            with tempfile.TemporaryDirectory() as work_dir:
+                original_dir, original_manifest = save_and_prepare(
+                    original_file, work_dir, "original"
+                )
+                suspicious_dir, suspicious_manifest = save_and_prepare(
+                    suspicious_file, work_dir, "suspicious"
+                )
 
-            results = run_all_layers(
-                original_dir, suspicious_dir, original_manifest, suspicious_manifest
-            )
-            findings, score = build_findings_and_score(results)
+                results = run_all_layers(
+                    original_dir, suspicious_dir, original_manifest, suspicious_manifest
+                )
+                findings, score = build_findings_and_score(results)
 
-    st.session_state["last_results"] = results
-    st.session_state["last_findings"] = findings
-    st.session_state["last_score"] = score
+        st.session_state["last_results"] = results
+        st.session_state["last_findings"] = findings
+        st.session_state["last_score"] = score
+        st.toast("Analiz tamamlandı.", icon="✅")
+
+    except Exception as e:
+        st.error(
+            "Analiz sırasında bir hata oluştu. Yüklenen dosyaların geçerli bir "
+            "squashfs imajı (.img veya .img.gz) olduğundan emin olun."
+        )
+        st.exception(e)
+        st.session_state.pop("last_results", None)
+        st.session_state.pop("last_findings", None)
+        st.session_state.pop("last_score", None)
 
 if "last_score" in st.session_state:
     st.divider()
