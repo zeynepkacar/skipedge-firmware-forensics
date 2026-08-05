@@ -433,7 +433,7 @@ p2im-12 test case'i çalıştırıldı: ~25 dakika (1501.9 saniye) süren bir an
 Aracın gerektirdiği tam Docker Compose kurulumu (5 container) yerine, arkasında kullandığı çekirdek motorlar (syft + grype) Docker'sız, bağımsız binary olarak kuruldu
 OpenWrt dosya sistemi üzerinde syft çalıştırıldı — 338 bileşen (SBOM) tespit edildi
 Aynı SBOM üzerinde grype ile CVE taraması yapıldı — 8 zafiyet bulundu (1 kritik, 5 orta, 2 düşük) — SBOM üretme + zafiyet tarama pipeline'ı uçtan uca doğrulandı
-4. 2. hafta reproduction durumu: 10 araçtan 7'si tamamlandı (FFXE, AutoFirm, PEMU, UEFI Memory Forensics, FirmRCA, UniBOM), 2'si ertelendi (ROSA: Docker/AFL++ derleme yükü; ChkUp: Ghidra+Python 3.6 uyumsuzluğu), 1'i (Pack-ALM) kaldı
+4. 2.hafta reproduction durumu: 10 araçtan 7'si tamamlandı (FFXE, AutoFirm, PEMU, UEFI Memory Forensics, FirmRCA, UniBOM), 2'si ertelendi (ROSA: Docker/AFL++ derleme yükü; ChkUp: Ghidra+Python 3.6 uyumsuzluğu), 1'i (Pack-ALM) kaldı
 Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ve tüm Colab not defterleri GitHub'a yüklendi
 
 Sonuç:
@@ -469,7 +469,16 @@ Literatür taraması paralel görevinde 2. hafta reproduction çalışması büy
    - Geçerli firmware dosyalarıyla analiz akışının, hata yönetimi eklendikten sonra da sorunsuz çalıştığı doğrulandı
 
 **Sonuç:**
-Arayüz artık geçersiz girdilere karşı dayanıklı ve kullanıcıyı daha iyi yönlendiren bir yapıya kavuştu. Görsel/bağlamsal iyileştirmelerle (sidebar, boş durum mesajı) birlikte arayüz daha profesyonel bir görünüme ulaştı.
+Arayüz artık geçersiz girdilere karşı dayanıklı ve kullanıcıyı daha iyi yönlendiren bir yapıya kavuştu. Görsel/bağlamsal iyileştirmelerle (sidebar, boş durum mesajı) birlikte arayüz daha profesyonel bir görünüme ulaştı. 
+
+
+ **Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+
+1. P02 (ROSA, github.com/binsec/rosa) ikinci kez ele alındı. Rust toolchain (rustup) kuruldu. cargo build --release, AFL++ olmadan başarıyla derlendi (yaklaşık 2 dakika 29 saniye), 7 yardımcı binary üretildi (rosa, rosa-simulate, rosa-generate-config, rosa-showmap, rosa-trace-dist, rosa-evaluate, rosa-explain). 
+2. Kod incelemesiyle doğrulandı: src/fuzzer/ klasöründe sadece aflpp.rs var, alternatif/hafif bir backend yok - yani gerçek bir tespit kampanyası zorunlu olarak AFL++ fuzzer'ına bağımlı. AFL++'ın derlenmesi (patch'ler, saatler sürebilecek fuzzing kampanyası) bugün için kapsam dışı bırakıldı. Sonuç: derleme başarısı doğrulandı, tam çalıştırma AFL++ bağımlılığı nedeniyle ertelendi.
+3. 3.hafta reproduction çalışmasının nihai durumu netleşti: 10 araçtan 8'i tam sonuçla doğrulandı (FFXE, AutoFirm, PEMU, UEFI Memory Forensics, FirmRCA, UniBOM, Pack-ALM ve önceki günden FFXE), 1'i (ROSA) kısmi doğrulandı (derleme başarılı, çalıştırma AFL++ bağımlılığından ertelendi), 1'i (ChkUp) Python 3.6/Ghidra uyumluluk riski nedeniyle hiç denenmedi.
+Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ROSA'nın kısmi sonucuyla güncellendi.
 
 **Notlar / Sonraki Adımlar:**
 - Uçtan uca entegrasyon testi (13. gün) - tüm sistemin sıfırdan, temiz bir ortamda baştan sona test edilmesi
