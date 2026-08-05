@@ -482,3 +482,32 @@ Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ROSA'nın kısmi sonucuyla gü
 
 **Notlar / Sonraki Adımlar:**
 - Uçtan uca entegrasyon testi (13. gün) - tüm sistemin sıfırdan, temiz bir ortamda baştan sona test edilmesi
+
+## 05.08.2026
+
+**Yapılanlar:**
+
+1. Tüm sistemin uçtan uca entegrasyon testi yapıldı - kod değişikliği içermeyen, tamamen doğrulama amaçlı bir gündü
+
+2. Komut satırı katmanları sıfırdan doğrulandı
+   - static_integrity.py, entropy_analysis.py, yara_scan.py, permission_analysis.py, scoring.py, timeline.py sırayla çalıştırıldı
+   - Sonuç: hepsi hatasız çalıştı, scoring.py ve timeline.py beklenen 100/100 skorunu ve 7 bulguyu doğru şekilde verdi
+
+3. CVE testleri doğrulandı
+   - hash_truncation_demo.py: tam hash ile kısaltılmış hash arasındaki ~4.1x10^62 kat fark tekrar doğrulandı
+   - hardcoded_credential_test.py: admin:admin ve password= eşleşmeleri doğru şekilde tespit edildi
+
+4. Streamlit arayüzü 3 farklı senaryoyla test edildi
+   - Senaryo A (özdeş dosya, sıfır bulgu): doğru çalıştı
+   - Senaryo B (iki farklı gerçek OpenWrt sürümü, yoğun bulgu): doğru çalıştı, 100/100 skor ve 1335 bulgu üretildi
+   - Senaryo C (bilinçli olarak bozuk dosya): uygulama çökmedi, düzgün hata mesajı gösterildi
+
+5. Senaryo B'den indirilen HTML rapor incelendi
+   - Başlık, oluşturulma zamanı, özet kartları, "Rapor Kayıtlarının Bütünlüğü" mesajı, bulgular tablosu ve zaman çizelgesi/delil hash'leri tablosu tek tek kontrol edildi
+   - Tüm bölümlerin doğru ve eksiksiz göründüğü doğrulandı
+
+**Sonuç:**
+Sistem, komut satırından arayüze kadar tüm bileşenleriyle uçtan uca test edildi. Hem normal hem uç durumlar (özdeş dosya, yoğun fark, bozuk dosya) başarıyla doğrulandı. Temiz bir klasöre yeniden klonlayarak sıfırdan deneme adımı, kapsamlı olduğu için 19. güne (son regresyon testi) ertelendi.
+
+**Notlar / Sonraki Adımlar:**
+- README'nin son hâli ve LICENSE dosyası (14. gün)
