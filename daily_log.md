@@ -511,3 +511,29 @@ Sistem, komut satırından arayüze kadar tüm bileşenleriyle uçtan uca test e
 
 **Notlar / Sonraki Adımlar:**
 - README'nin son hâli ve LICENSE dosyası (14. gün)
+
+## 06.08.2026
+
+**Yapılanlar:**
+
+1. README.md tamamen güncellendi
+   - Tüm analiz katmanları ve FR (fonksiyonel gereksinim) tablolarına Durum sütunu eklendi, hepsi ✅ olarak işaretlendi
+   - Kullanım bölümü, gerçek ve çalışan komutlarla güncellendi (streamlit run app.py dahil)
+   - Değerlendirme bölümü eklendi: iki gerçek CVE değerlendirmesine (CVE-2024-54143, CVE-2024-9643) referans veriliyor
+   - Literatür Taraması bölümü, doğru terminolojiyle güncellendi (10 kodlu makale, 1 tanesi veri seti olduğu için ayrı değerlendirildi, kalan 9 araçtan 8 tam 1 kısmi doğrulandı)
+
+2. LICENSE dosyası eklendi
+   - Projenin eğitim/staj amaçlı geliştirildiğini, ticari kullanım için izin gerektiğini belirten bir lisans metni oluşturuldu
+
+3. Test paketine başlandı (pytest)
+   - tests/ klasörü oluşturuldu
+   - tests/test_static_integrity.py yazıldı: 5 test - hash hesaplamasının deterministik olduğu, eklenen/değiştirilen/silinen dosyaların doğru tespit edildiği, değişiklik olmayan senaryoda hiç bulgu çıkmadığı
+   - Testler tamamen izole, geçici (temporary) dizinler kullanıyor - gerçek firmware verisine ihtiyaç duymadan çalışıyor
+
+4. Testler çalıştırıldı: pytest tests/ -v → 5/5 PASSED
+
+**Sonuç:**
+Proje dokümantasyonu (README, LICENSE) tamamlandı. Otomatik test paketine başlandı - statik bütünlük katmanının tüm senaryoları artık otomatik doğrulanabiliyor.
+
+**Notlar / Sonraki Adımlar:**
+- Kalan katmanların testleri (entropi, YARA, izin/yetki, skorlama) ve bir uçtan uca entegrasyon testi yazılacak (15. gün)
