@@ -545,5 +545,13 @@ Literatür taraması paralel görevinde bildiri taslağı için gerekli sentez m
 **Sonuç:**
 Proje dokümantasyonu (README, LICENSE) tamamlandı. Otomatik test paketine başlandı - statik bütünlük katmanının tüm senaryoları artık otomatik doğrulanabiliyor.
 
+**Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+
+1. P04 (ChkUp) son kez ele alındı. Colab'ın sistem genelindeki numpy sürümünü düşürmenin diğer önceden derlenmiş paketlerle (scipy vb.) ikili uyumsuzluk yarattığı görüldü — bunun yerine izole bir Python venv (/content/chkup_venv) kuruldu. Venv içinde sırasıyla pycparser==2.21, güncel setuptools, js2py'de küçük bir bytecode uyumluluk yaması, np.bool/np.float_ sürüm çakışmaları düzeltildi. Sonuç: angr 9.2.6 sorunsuz import edildi — ChkUp'ın Python 3.6 zorunluluğu efsanesi tamamen çürütüldü.
+2. Gerçek çalıştırma denemesinde script'in sessizce hiçbir iş yapmadan bittiği görüldü. Kod incelemesiyle kök neden bulundu: ChkUp'ın kendi Utils.getRoot() fonksiyonu, verilen path zaten "-root" ile bitince onu bir liste yerine düz string olarak döndürüyor — bu da ana döngünün stringi karakter karakter gezip hiçbir şey bulamamasına yol açıyor. Bu, ChkUp'ın kendi kodunda tespit edilmiş orijinal bir bulgu.
+3. ChkUp'ın nihai durumu "Tamamlandı (kısmi bulgu)" olarak işaretlendi — Python bağımlılık zincirinin tamamen çözülmesi ve kod incelemesiyle gerçek bir bug tespiti, ROSA/AutoFirm ile tutarlı bir kısmi doğrulama sağladı.
+Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ChkUp'ın nihai durumuyla güncellendi. İki özet grafik üretildi: durum dağılımı (6 tam / 3 kısmi bulgu / 1 veri seti) ve araç başına çalışma süresi karşılaştırması (log ölçek). Bunlarla birlikte 3. hafta reproduction çalışması ve planlanan tüm adımlar (çaprazlama, tablo, grafikleştirme) tamamlandı.
+
 **Notlar / Sonraki Adımlar:**
 - Kalan katmanların testleri (entropi, YARA, izin/yetki, skorlama) ve bir uçtan uca entegrasyon testi yazılacak (15. gün)
