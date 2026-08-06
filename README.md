@@ -107,9 +107,18 @@ Yöntem, iki gerçek ve güncel CVE ile doğrulanmıştır:
 
 Gerçek ilerleme günlüğü [`daily_log.md`](./daily_log.md) dosyasında tarih bazında tutulmaktadır.
 
+
 ## Literatür Taraması
 
-Ana projeye paralel olarak, akademik bir literatür taraması görevi de yürütülmektedir. Tüm çıktıları [`/literature-review`](./literature-review) klasöründe yer almaktadır.
+Ana projeye paralel olarak, akademik bir literatür taraması görevi de yürütülmektedir: proje konusu ve çevresindeki alanlarda 2024–2026 arası yayınlanmış minimum 30 makalenin taranması, değerlendirilmesi ve kodlu/reproduction'a uygun olanların doğrulanması.
+
+Bu çalışmanın tüm çıktıları [`/literature-review`](./literature-review) klasöründe yer almaktadır:
+
+- **30 makale** taranmış ve değerlendirilmiştir (2024–2026 aralığında, USENIX Security, ACM CCS, IEEE S&P, NDSS, DFRWS gibi başlıca konferans/dergilerden)
+- Literatür taramasında kodlu/reproduction'a uygun **10 makale** belirlendi. Bunlardan biri (P25, LFwC) aracın kendisi değil bir veri seti olduğu için ayrı değerlendirildi; kalan 9 araçtan 8'i tam, 1'i (ROSA) kısmi olarak doğrulandı, 1 araç (ChkUp) test edilemedi.
+- Her makale için doldurulmuş "Makale İnceleme Şablonu" dosyaları `/literature-review/articles/` altında bulunmaktadır
+- Kullanılan arama stratejisi ve karşılaştırma tablosu için sırasıyla `arama-stratejisi.md` ve `ozet-karsilastirma-tablosu.md` dosyalarına bakınız.
+
 
 ## Lisans
 
