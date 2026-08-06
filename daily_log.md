@@ -509,6 +509,16 @@ Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ROSA'nın kısmi sonucuyla gü
 **Sonuç:**
 Sistem, komut satırından arayüze kadar tüm bileşenleriyle uçtan uca test edildi. Hem normal hem uç durumlar (özdeş dosya, yoğun fark, bozuk dosya) başarıyla doğrulandı. Temiz bir klasöre yeniden klonlayarak sıfırdan deneme adımı, kapsamlı olduğu için 19. güne (son regresyon testi) ertelendi.
 
+
+**Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+
+1. P04 (ChkUp) ikinci kez denendi. angr==9.2.6 dahil tüm bağımlılıklar başarıyla kuruldu — Python 3.6 zorunluluğunun göründüğü kadar katı olmadığı ortaya çıktı. numpy 2.0'ın angr ile uyumsuzluğu tespit edilip çözümü bulundu (numpy<2.0 + runtime restart). Ancak Colab bağlantısı gün boyunca defalarca koptuğu için tam çalıştırmaya geçilemedi. Ghidra 10.1.2 indirildi, Java 11 kuruldu. Sonuç: teknik engel yok, sadece ortam kararsızlığı nedeniyle tamamlanamadı.
+2. 10 makalenin tamamı için bildiri taslağına referans olacak bir belge (literatur-bildiri-notlari.md) hazırlandı — her makalenin projeyle örtüşen/eksik/tamamlayıcı yönleri ve test bulguları özetlendi, genel sentez (İlgili Çalışmalar bölümü taslağı) eklendi.
+3. ROSA ve Pack-ALM'in güncel Colab not defterleri GitHub'a yüklendi.
+
+Sonuç:
+Literatür taraması paralel görevinde bildiri taslağı için gerekli sentez malzemesi hazırlandı. ChkUp'ın tam çalıştırılması hâlâ eksik ama teknik değil ortamsal bir engelden kaynaklanıyor, ileride hızlıca tamamlanabilir durumda.
 **Notlar / Sonraki Adımlar:**
 - README'nin son hâli ve LICENSE dosyası (14. gün)
 
