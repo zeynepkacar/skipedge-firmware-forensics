@@ -555,3 +555,22 @@ Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ChkUp'ın nihai durumuyla gün
 
 **Notlar / Sonraki Adımlar:**
 - Kalan katmanların testleri (entropi, YARA, izin/yetki, skorlama) ve bir uçtan uca entegrasyon testi yazılacak (15. gün)
+
+## 07.08.2026
+
+**Yapılanlar:**
+
+1. Test paketi tamamlandı: kalan 4 katman için pytest testleri yazıldı
+   - tests/test_entropy_analysis.py: entropi hesaplamasının düşük/yüksek/boş veri durumlarında doğru çalıştığı, karşılaştırmalı analizin yeni yüksek entropili dosyaları doğru tespit ettiği test edildi
+   - tests/test_yara_scan.py: backdoor anahtar kelimesi ve hardcoded credential desenlerinin doğru tespit edildiği, temiz dosyalarda hiç eşleşme çıkmadığı test edildi
+   - tests/test_permission_analysis.py: SUID/SGID bit kontrolünün ve manifest tabanlı karşılaştırmanın doğru çalıştığı test edildi
+   - tests/test_scoring.py: bulgu yokken skorun 0 olduğu, tek bulguda doğru ağırlığın uygulandığı, skorun 100'de tavan yaptığı, ve önceden var olan YARA eşleşmelerinin sayılmadığı test edildi
+
+2. Tüm test paketi (21 test, 5 dosyada) çalıştırıldı
+   - Sonuç: 21/21 PASSED
+
+**Sonuç:**
+Projenin 4 analiz katmanı ve skorlama mantığı artık tamamen otomatik test kapsamında. 14. günde başlanan statik bütünlük testleriyle birlikte, sistemin tüm çekirdek mantığı pytest ile doğrulanabiliyor.
+
+**Notlar / Sonraki Adımlar:**
+- Yapılandırılabilir skorlama (config.json) ve CLI arayüzü eklenecek (16. gün)
