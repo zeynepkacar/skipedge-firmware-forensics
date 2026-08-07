@@ -570,9 +570,18 @@ Takip tablosu (literatur-arac-sonuc-tablosu.xlsx) ChkUp'ın nihai durumuyla gün
 
 2. Tüm test paketi (21 test, 5 dosyada) çalıştırıldı
    - Sonuç: 21/21 PASSED
-
-**Sonuç:**
+ **Sonuç:**
 Projenin 4 analiz katmanı ve skorlama mantığı artık tamamen otomatik test kapsamında. 14. günde başlanan statik bütünlük testleriyle birlikte, sistemin tüm çekirdek mantığı pytest ile doğrulanabiliyor.
+
+**Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+1. Bildiri taslağının Yöntem/Yaklaşım bölümü yazıldı. Proje README'sinden alınan gerçek mimari doğrulanarak (statik bütünlük, entropi analizi, YARA imza/pattern taraması, izin/yetki analizi, skorlama ve zaman çizelgesi, değerlendirme olmak üzere altı analiz katmanı) dört alt bölümde ele alındı: Genel Mimari (PySquashfsImage ile dosya sistemi çıkarımı, Python/Streamlit teknoloji yığını), Analiz Katmanları (dört bağımsız katmanın işlevleri ve delil zinciri mekanizmasının teknik açıklaması), Arayüz ve Raporlama (FR-1 – FR-8 fonksiyonel gereksinimlerinin akademik dile aktarılması), Değerlendirme Metodolojisi (CVE-2024-54143 ve CVE-2024-9643 ile yapılan doğrulamanın ve iki farklı OpenWrt sürümü karşılaştırmasıyla yapılan uçtan uca testin anlatımı).
+
+2. Tablo 1 (İlgili Çalışmalar bölümünün özet tablosu) için içerik belirlendi: 10 makalenin odak alanı, projeyle ilişkisi ve reproduction sonucunu gösteren 4 sütunlu bir tablo olarak tasarlandı, Word'e elle eklenmek üzere hazırlandı.
+
+Sonuç:
+Bildiri taslağının üç bölümü (Giriş, İlgili Çalışmalar, Yöntem) tamamlandı. Plana göre zamanında, hatta biraz önde ilerleniyor. Sırada Bölüm 4 (Deneysel Değerlendirme: Literatür Reproduction) var — takip tablosu ve mevcut grafiklerden yazılacak.
+
 
 **Notlar / Sonraki Adımlar:**
 - Yapılandırılabilir skorlama (config.json) ve CLI arayüzü eklenecek (16. gün)
