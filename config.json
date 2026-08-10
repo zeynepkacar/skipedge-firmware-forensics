@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "static_added_file": 15,
+    "static_modified_file": 10,
+    "static_deleted_file": 20,
+    "yara_high_risk": 25,
+    "yara_medium_risk": 5,
+    "entropy_new_suspicious_file": 15,
+    "entropy_changed_file": 10,
+    "permission_new_suid_sgid": 25,
+    "permission_changed": 15
+  },
+  "max_score": 100
+}

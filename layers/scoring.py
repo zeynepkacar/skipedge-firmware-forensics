@@ -14,20 +14,15 @@ from layers.entropy_analysis import compare_entropy
 from layers.yara_scan import scan_directory as yara_scan_directory
 from layers.permission_analysis import compare_permissions
 
-# Weight table: how many points each finding type contributes
-WEIGHTS = {
-    "static_added_file": 15,
-    "static_modified_file": 10,
-    "static_deleted_file": 20,
-    "yara_high_risk": 25,
-    "yara_medium_risk": 5,
-    "entropy_new_suspicious_file": 15,
-    "entropy_changed_file": 10,
-    "permission_new_suid_sgid": 25,
-    "permission_changed": 15,
-}
+import json
 
-MAX_SCORE = 100
+CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.json")
+
+with open(CONFIG_PATH, "r") as f:
+    _config = json.load(f)
+
+WEIGHTS = _config["weights"]
+MAX_SCORE = _config["max_score"]
 
 
 def run_all_layers(original_dir, suspicious_dir,
