@@ -585,3 +585,51 @@ Bildiri taslağının üç bölümü (Giriş, İlgili Çalışmalar, Yöntem) ta
 
 **Notlar / Sonraki Adımlar:**
 - Yapılandırılabilir skorlama (config.json) ve CLI arayüzü eklenecek (16. gün)
+
+## 10.08.2026
+
+**Yapılanlar:**
+
+1. Yapılandırılabilir skorlama sistemi eklendi
+   - Şimdiye kadar skorlama ağırlıkları (hangi bulgu türünün kaç puan katkı yaptığı) doğrudan layers/scoring.py dosyasının içine gömülüydü, dışarıdan değiştirilemiyordu
+   - Proje kök dizinine config.json dosyası oluşturuldu: tüm ağırlıklar (statik bütünlük, entropi, YARA, izin/yetki için) ve maksimum skor değeri artık bu dosyada tutuluyor
+   - layers/scoring.py güncellendi: WEIGHTS ve MAX_SCORE sabitleri artık kod içinde tanımlı değil, program başlarken config.json dosyasından okunuyor
+   - Bu değişikliğin amacı: skorlama mantığını değiştirmek istendiğinde kod dosyasına dokunmadan, sadece config.json üzerinden ayar yapılabilmesi
+
+2. Komut satırı arayüzü (CLI) eklendi
+   - main.py oluşturuldu: Python'un argparse kütüphanesi kullanılarak yazıldı
+   - --original ve --suspicious parametreleriyle iki firmware dizini belirtiliyor, isteğe bağlı olarak --original-manifest ve --suspicious-manifest ile izin manifest dosyalarının yolu da özelleştirilebiliyor
+   - Çalıştırıldığında şüphe skorunu, toplam bulgu sayısını, delil zinciri bütünlük durumunu ve tüm bulguları katman/dosya/tür/puan formatında terminale yazdırıyor
+   - Bu, projenin artık hem web arayüzünden (Streamlit) hem de doğrudan komut satırından (otomasyon, script içinde çağırma gibi senaryolar için) kullanılabilmesini sağlıyor
+
+3. Değişikliklerin doğruluğu test edildi
+   - pytest tests/ -v çalıştırıldı: önceki günden kalan 21 test hâlâ eksiksiz PASSED çıktı, config.json'a geçişin mevcut davranışı bozmadığı doğrulandı
+   - python main.py --original data/original --suspicious data/suspicious çalıştırıldı: 100/100 şüphe skoru, 7 bulgu, "Evidence Chain Integrity: PASSED" sonucu alındı - komut satırı ile web arayüzünün aynı sonucu ürettiği doğrulandı
+
+4. Elle (manuel) dosya değiştirme testi - komut satırı üzerinden
+   - data/suspicious/etc/banner dosyası Not Defteri ile elle açılıp bir satır eklendi, herhangi bir Python script'i kullanılmadı
+   - python layers/static_integrity.py çalıştırıldı, etc\banner dosyasının "Modified files" listesinde doğru şekilde göründüğü gözlemlendi
+   - Bu, statik bütünlük katmanının sadece proje içi test script'lerinin ürettiği senaryularda değil, gerçekten herhangi bir manuel değişiklikte de doğru çalıştığını kanıtladı
+
+5. Arayüzde bozuk dosya senaryosu ile ek bir hata yönetimi testi
+   - Hex editor (HxD) ile orijinal firmware imajının bir kopyası üzerinde küçük bir değişiklik denendi
+   - Değiştirilen dosya arayüze yüklenip analiz edilmeye çalışıldığında BadGzipFile hatası oluştu (gzip formatının sonunda tuttuğu bütünlük kontrol değeri, byte değişikliği nedeniyle uyuşmadı)
+   - Uygulama çökmedi, 12. günde eklenen hata yönetimi sayesinde kullanıcıya anlaşılır bir hata mesajı gösterildi
+   - Bu denemeden şu teknik sonuç çıkarıldı: gzip ve squashfs gibi binary formatlar, dosya sonunda checksum/bütünlük kontrolü içerdiğinden, hex editor ile rastgele byte değiştirmek geçerli bir dosya üretmiyor - gerçek bir "elle değiştirilmiş ama geçerli" firmware üretmek için doğru araçların (unsquashfs/mksquashfs) kullanılması gerektiği anlaşıldı
+
+6. Arayüzde gerçek, geçerli, elle değiştirilmiş bir firmware imajı ile tam doğrulama yapıldı
+   - dism.exe komutlarıyla (Microsoft-Windows-Subsystem-Linux ve VirtualMachinePlatform) bu bileşenler etkinleştirildi, sistem yeniden başlatıldı, wsl --install ile Ubuntu kuruldu
+   - WSL içine squashfs-tools paketi kuruldu (unsquashfs ve mksquashfs araçlarını sağlıyor)
+   - Orijinal firmware imajı (openwrt-25.12.5-x86-64-generic-squashfs-rootfs.img) WSL üzerinden unsquashfs ile /tmp/extracted klasörüne çıkarıldı
+   - etc/banner dosyası WSL içinde nano metin editörü ile elle açılıp değiştirildi
+   - Değiştirilmiş dosya sistemi mksquashfs ile geçerli, yeni bir squashfs imajına (openwrt-modified.img) yeniden paketlendi
+   - gzip ile sıkıştırma denendiğinde Windows/WSL dosya sistemi arası bir izin hatası (Operation not permitted) alındı; dosya önce WSL'in kendi iç dosya sistemine (/tmp) kopyalanıp orada sıkıştırılarak, sonra tekrar proje klasörüne kopyalanarak bu sorun aşıldı
+   - Sonuç olarak elde edilen openwrt-modified.img.gz dosyası Streamlit arayüzüne "Şüpheli Firmware" olarak, orijinal imaj "Orijinal Firmware" olarak yüklendi
+   - Analiz hiçbir hata vermeden tamamlandı: etc\banner dosyası "Değiştirilen dosyalar" olarak, dev\console dosyası "Silinen dosyalar" olarak doğru şekilde tespit edildi
+
+**Sonuç:**
+Bugün, projenin işlevselliğini genişleten iki kalıcı özellik (yapılandırılabilir skorlama, CLI arayüzü) koda eklendi ve test edildi. Bunun ötesinde, projenin en temel iddiası - "gerçek dünyada elle/manuel olarak değiştirilmiş bir firmware imajını doğru tespit edebilme" - ilk kez proje script'lerinin ürettiği senaryoların dışına çıkılarak, bağımsız bir araçla (mksquashfs) üretilmiş gerçek bir imaj üzerinde uçtan uca doğrulandı. Bu süreçte WSL kurulumu, Windows sanallaştırma ayarları ve dosya izin sorunları gibi çeşitli teknik engeller aşıldı.
+
+**Notlar / Sonraki Adımlar:**
+- Loglama sistemi (logging modülü) print() ifadelerinin yerine tüm katmanlara entegre edilecek (17. gün)
+- openwrt-modified.img.gz dosyası .gitignore kapsamında olduğu için GitHub'a gönderilmedi, sadece yerel bir doğrulama testi olarak kaldı
