@@ -142,15 +142,16 @@ if analyze_clicked:
         st.toast("Analiz tamamlandı.", icon="✅")
 
     except Exception as e:
-        st.error(
-            "Analiz sırasında bir hata oluştu. Yüklenen dosyaların geçerli bir "
-            "squashfs imajı (.img veya .img.gz) olduğundan emin olun."
+        st.warning(
+            "⚠️ Yüklenen dosyalardan biri işlenemedi. Lütfen dosyaların geçerli bir "
+            "squashfs firmware imajı (.img veya .img.gz) olduğundan emin olup tekrar deneyin."
         )
-        st.exception(e)
+        with st.expander("Teknik detay (isteğe bağlı)"):
+            st.code(str(e))
         st.session_state.pop("last_results", None)
         st.session_state.pop("last_findings", None)
         st.session_state.pop("last_score", None)
-
+        
 if "last_score" in st.session_state:
     st.divider()
     score = st.session_state["last_score"]
