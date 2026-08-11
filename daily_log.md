@@ -667,6 +667,10 @@ Bildiri taslağında düzeltilmesi gereken noktalar netleşti, destekleyici gör
 4. Değişiklikler test edildi
    - python layers/scoring.py ve python layers/timeline.py çalıştırıldı, log çıktısının hem terminalde hem logs/analysis.log dosyasında doğru göründüğü doğrulandı
    - pytest tests/ -v ile 21/21 test PASSED, loglama eklemesinin mevcut davranışı etkilemediği doğrulandı
+5. Geri bildirim doğrultusunda hata mesajı iyileştirildi
+   - Bozuk/geçersiz dosya yüklendiğinde gösterilen kırmızı hata kutusunun (st.error + tam traceback) "sistem çöktü" izlenimi verdiği geri bildirimi alındı
+   - Mesaj st.warning ile daha yumuşak bir tonda gösterilecek şekilde değiştirildi, teknik detay (traceback) kapalı bir expander içine alındı
+   - Test edildi: bozuk dosya tekrar yüklendi, yeni uyarı görünümü doğru çalıştı
 
 **Sonuç:**
 Proje artık tüm katmanlarında gerçek bir logging altyapısı kullanıyor; print() ifadelerinin hiçbiri kalmadı. Bu, hata ayıklamayı ve sistemin çalışma geçmişini takip etmeyi kolaylaştıran, üretim kalitesinde bir iyileştirme.
