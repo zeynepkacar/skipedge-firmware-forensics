@@ -9,6 +9,10 @@ preserve Unix permission bits like SUID/SGID.
 import json
 import stat
 
+from layers.logger_config import get_logger
+
+logger = get_logger(__name__)
+
 
 def load_manifest(manifest_path):
     """Loads a permission manifest JSON file.
@@ -56,13 +60,5 @@ def compare_permissions(original_manifest_path, suspicious_manifest_path):
 
 
 if __name__ == "__main__":
-    print("=== Permission Analysis: original vs suspicious ===")
     result = compare_permissions("data/original_permissions.json", "data/suspicious_permissions.json")
-
-    print(f"\nFiles with changed permissions: {len(result['permission_changes'])}")
-    for file_path, change in result["permission_changes"].items():
-        print(f"  {file_path}: {change['original']['filemode']} -> {change['suspicious']['filemode']}")
-
-    print(f"\nNew SUID/SGID files (only in suspicious): {len(result['new_suid_or_sgid_files'])}")
-    for file_path, perms in result["new_suid_or_sgid_files"].items():
-        print(f"  {file_path}: {perms['filemode']}")
+    logger.info(f"Permission analysis complete: {len(result['permission_changes'])} changed, {len(result['new_suid_or_sgid_files'])} new SUID/SGID files")

@@ -6,6 +6,10 @@ Scans firmware files against known backdoor/malware signatures using YARA rules.
 import os
 import yara
 
+from layers.logger_config import get_logger
+
+logger = get_logger(__name__)
+
 RULES_PATH = "rules/backdoor_rules.yar"
 
 
@@ -45,21 +49,16 @@ def scan_directory(directory_path, rules_path=RULES_PATH):
                 matches = scan_file(full_path, rules)
                 if matches:
                     findings[relative_path] = matches
-            except yara.Error:
+            except yara.Error as e:
+                logger.warning(f"YARA could not scan {full_path}: {e}")
                 continue
 
     return findings
 
 
 if __name__ == "__main__":
-    print("=== YARA Scan: data/original ===")
     original_findings = scan_directory("data/original")
-    print(f"Files with matches: {len(original_findings)}")
-    for file_path, matches in original_findings.items():
-        print(f"  {file_path}: {matches}")
+    logger.info(f"YARA scan complete for data/original: {len(original_findings)} files with matches")
 
-    print("\n=== YARA Scan: data/suspicious ===")
     suspicious_findings = scan_directory("data/suspicious")
-    print(f"Files with matches: {len(suspicious_findings)}")
-    for file_path, matches in suspicious_findings.items():
-        print(f"  {file_path}: {matches}")
+    logger.info(f"YARA scan complete for data/suspicious: {len(suspicious_findings)} files with matches")

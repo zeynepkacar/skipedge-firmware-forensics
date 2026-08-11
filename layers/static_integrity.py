@@ -7,6 +7,10 @@ Detects added, deleted, and modified files.
 import hashlib
 import os
 
+from layers.logger_config import get_logger
+
+logger = get_logger(__name__)
+
 
 def calculate_file_hash(file_path):
     """Calculates the SHA-256 hash of a file."""
@@ -58,7 +62,7 @@ def compare_firmware(original_dir, suspicious_dir):
 
 if __name__ == "__main__":
     result = compare_firmware("data/original", "data/suspicious")
-    print("=== Static Integrity Analysis Results ===")
-    print(f"Added files: {result['added_files']}")
-    print(f"Deleted files: {result['deleted_files']}")
-    print(f"Modified files: {result['modified_files']}")
+    logger.info("Static integrity analysis complete")
+    logger.info(f"Added files: {result['added_files']}")
+    logger.info(f"Deleted files: {result['deleted_files']}")
+    logger.info(f"Modified files: {result['modified_files']}")

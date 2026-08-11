@@ -6,6 +6,7 @@ and a chronological list of findings.
 
 import sys
 import os
+import json
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -13,8 +14,9 @@ from layers.static_integrity import compare_firmware
 from layers.entropy_analysis import compare_entropy
 from layers.yara_scan import scan_directory as yara_scan_directory
 from layers.permission_analysis import compare_permissions
+from layers.logger_config import get_logger
 
-import json
+logger = get_logger(__name__)
 
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.json")
 
@@ -53,7 +55,6 @@ def build_findings_and_score(results):
     findings = []
     score = 0
 
-    # Static integrity findings
     for f in results["static"]["added_files"]:
         findings.append({"layer": "static_integrity", "file": f, "type": "added_file", "points": WEIGHTS["static_added_file"]})
         score += WEIGHTS["static_added_file"]
@@ -64,7 +65,6 @@ def build_findings_and_score(results):
         findings.append({"layer": "static_integrity", "file": f, "type": "deleted_file", "points": WEIGHTS["static_deleted_file"]})
         score += WEIGHTS["static_deleted_file"]
 
-    # Entropy findings
     for f in results["entropy"]["new_suspicious_files"]:
         findings.append({"layer": "entropy", "file": f, "type": "new_high_entropy_file", "points": WEIGHTS["entropy_new_suspicious_file"]})
         score += WEIGHTS["entropy_new_suspicious_file"]
@@ -72,9 +72,6 @@ def build_findings_and_score(results):
         findings.append({"layer": "entropy", "file": f, "type": "entropy_changed", "points": WEIGHTS["entropy_changed_file"]})
         score += WEIGHTS["entropy_changed_file"]
 
-    # YARA findings: only count matches that are NEW in suspicious (not already
-    # present in original) — pre-existing matches are normal firmware content,
-    # not evidence of tampering
     original_yara_signatures = set()
     for file_path, matches in results["yara_original"].items():
         for match in matches:
@@ -84,7 +81,7 @@ def build_findings_and_score(results):
         for match in matches:
             signature = (file_path, match["rule_name"])
             if signature in original_yara_signatures:
-                continue  # already present in original, not a new finding
+                continue
             weight_key = "yara_high_risk" if match["risk"] == "high" else "yara_medium_risk"
             findings.append({
                 "layer": "yara",
@@ -94,7 +91,6 @@ def build_findings_and_score(results):
             })
             score += WEIGHTS[weight_key]
 
-    # Permission findings
     for f in results["permission"]["new_suid_or_sgid_files"]:
         findings.append({"layer": "permission", "file": f, "type": "new_suid_sgid", "points": WEIGHTS["permission_new_suid_sgid"]})
         score += WEIGHTS["permission_new_suid_sgid"]
@@ -108,11 +104,10 @@ def build_findings_and_score(results):
 
 
 if __name__ == "__main__":
-    print("Running all analysis layers...\n")
+    logger.info("Running all analysis layers...")
     results = run_all_layers("data/original", "data/suspicious")
     findings, final_score = build_findings_and_score(results)
 
-    print(f"=== Suspicion Score: {final_score}/100 ===\n")
-    print(f"Total findings: {len(findings)}\n")
+    logger.info(f"Suspicion score: {final_score}/100, {len(findings)} findings")
     for finding in findings:
-        print(f"  [{finding['layer']}] {finding['file']} -> {finding['type']} (+{finding['points']})")
+        logger.info(f"[{finding['layer']}] {finding['file']} -> {finding['type']} (+{finding['points']})")

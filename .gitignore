@@ -11,3 +11,6 @@ __pycache__/
 # Çıkarılmış firmware dosya sistemleri (binlerce küçük dosya, repo şişirir)
 data/original/
 data/suspicious/
+
+
+logs/

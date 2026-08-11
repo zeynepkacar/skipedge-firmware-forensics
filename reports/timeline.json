@@ -1,38 +1,65 @@
 [
   {
     "event_id": 1,
-    "timestamp": "2026-07-24T12:42:13.606528+00:00",
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
+    "layer": "static_integrity",
+    "file": "etc\\support_access.conf",
+    "finding_type": "added_file",
+    "points": 15,
+    "evidence_hash": "6b0852335ce5740c53e56a3f40ba50b793a7303e7e82781351ac1d9e25a9a830"
+  },
+  {
+    "event_id": 2,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
     "layer": "static_integrity",
     "file": "usr\\bin\\update_service",
     "finding_type": "added_file",
     "points": 15,
-    "evidence_hash": "8ddf37559ef339e5fd645bf995dabddc4d58891c4ea566b2b7c55d7c54327bf4"
+    "evidence_hash": "e59f70536b55a28bbbbc0c19649f8a913e8ea9c195ab16d07db5368f5745146f"
   },
   {
-    "event_id": 2,
-    "timestamp": "2026-07-24T12:42:13.606528+00:00",
+    "event_id": 3,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
     "layer": "static_integrity",
     "file": "etc\\dnsmasq.conf",
     "finding_type": "modified_file",
     "points": 10,
-    "evidence_hash": "b56eb9c4e6236033786d6c97340f53eff1980bad89cc6f3bc2d263d46ff11e46"
+    "evidence_hash": "9109e05ad2ca1b98f8911ec542beaef0c2951d0f9ba61acc15e6c7c714ca3fd1"
   },
   {
-    "event_id": 3,
-    "timestamp": "2026-07-24T12:42:13.606528+00:00",
+    "event_id": 4,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
+    "layer": "static_integrity",
+    "file": "etc\\shells",
+    "finding_type": "deleted_file",
+    "points": 20,
+    "evidence_hash": "f165a9c9b82d4b9ab9636e130da9efe5d54343ebaa39ef3d5e6899bd7a95c7d5"
+  },
+  {
+    "event_id": 5,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
+    "layer": "yara",
+    "file": "etc\\support_access.conf",
+    "finding_type": "rule_match:Hardcoded_Credentials",
+    "points": 5,
+    "evidence_hash": "6be5c4d4c12699ddeb194e0925e331839b7b1908513d2036a9a804fb70de2445"
+  },
+  {
+    "event_id": 6,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
     "layer": "yara",
     "file": "usr\\bin\\update_service",
     "finding_type": "rule_match:Suspicious_Backdoor_Keyword",
     "points": 25,
-    "evidence_hash": "963cfdfd014c96bc31daf663668c25a92dd289b0444f0b7157b85169dbc9ba36"
+    "evidence_hash": "6931b99be16ec3ffdc1d8251dcf5c885d0f432890786a4c3945c0955c0799932"
   },
   {
-    "event_id": 4,
-    "timestamp": "2026-07-24T12:42:13.606528+00:00",
+    "event_id": 7,
+    "timestamp": "2026-08-11T12:44:25.656979+00:00",
     "layer": "permission",
     "file": "usr/bin/update_service",
     "finding_type": "new_suid_sgid",
     "points": 25,
-    "evidence_hash": "83be324a914cf9858698cd7052003af1cb443a6155c94b5f3d4def97c2bbd77c"
+    "evidence_hash": "e0f31c8d7d000149486743a41c0922dc2288f86469cd91f04dd47f6ebaac5e1a"
   }
 ]

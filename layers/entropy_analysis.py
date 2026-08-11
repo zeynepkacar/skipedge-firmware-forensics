@@ -8,6 +8,10 @@ import math
 import os
 from collections import Counter
 
+from layers.logger_config import get_logger
+
+logger = get_logger(__name__)
+
 ENTROPY_THRESHOLD = 6.8
 BLOCK_SIZE = 256  # bytes
 
@@ -112,7 +116,7 @@ def compare_entropy(original_dir, suspicious_dir):
 
 
 if __name__ == "__main__":
-    print("=== Comparative Entropy Analysis: original vs suspicious ===")
     comparison = compare_entropy("data/original", "data/suspicious")
-    print(f"Common files with changed entropy: {comparison['changed_entropy_files']}")
-    print(f"New high-entropy files only in suspicious: {comparison['new_suspicious_files']}")
+    logger.info("Comparative entropy analysis complete")
+    logger.info(f"Common files with changed entropy: {comparison['changed_entropy_files']}")
+    logger.info(f"New high-entropy files only in suspicious: {comparison['new_suspicious_files']}")
