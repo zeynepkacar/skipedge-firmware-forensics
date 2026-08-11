@@ -630,6 +630,58 @@ Bildiri taslağının üç bölümü (Giriş, İlgili Çalışmalar, Yöntem) ta
 **Sonuç:**
 Bugün, projenin işlevselliğini genişleten iki kalıcı özellik (yapılandırılabilir skorlama, CLI arayüzü) koda eklendi ve test edildi. Bunun ötesinde, projenin en temel iddiası - "gerçek dünyada elle/manuel olarak değiştirilmiş bir firmware imajını doğru tespit edebilme" - ilk kez proje script'lerinin ürettiği senaryoların dışına çıkılarak, bağımsız bir araçla (mksquashfs) üretilmiş gerçek bir imaj üzerinde uçtan uca doğrulandı. Bu süreçte WSL kurulumu, Windows sanallaştırma ayarları ve dosya izin sorunları gibi çeşitli teknik engeller aşıldı.
 
+**Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+Literatür Taraması / Bildiri Taslağı:
+
+1. Bildiri taslağının başlığı, öz ve giriş bölümlerinde geçen "hash-zincirli delil zinciri" ve "chain of custody'yi teknik olarak karşılar" gibi ifadeler, kodun gerçekte yaptığından daha iddialı olduğu için not edildi; düzeltilecek ifadeler listelendi.
+2. Reproduction sonuç sayılarının (6 tam/3 kısmi/1 veri seti yerine 6 tam/2 kısmi/1 test edilemedi/1 veri seti) ve ChkUp'ın durumunun ("kısmi bulgu" yerine "test edilemedi") güncellenmesi gerektiği belirlendi.
+3. Literatür bölümüne FACT ve EMBA'nın eklenmesi ve "literatürde emsali yok" ifadesinin "incelenen çalışmalar arasında emsali yok" şeklinde sınırlandırılması kararlaştırıldı.
+4. Sistem mimarisi şeması (referans/şüpheli firmware girişinden dört analiz katmanı, skorlama ve HTML rapora kadar tüm akışı gösteren) ve düzeltilmiş 4 kategorili durum dağılımı grafiği hazırlandı.
+5. config.json dosyasındaki şüphe skoru ağırlıkları ve tamper_firmware.py betiğinin çalıştırma çıktısı paylaşıldı; bunlar bildiriye eklenecek skor ağırlıkları ve kontrollü tahrifat senaryosu tablolarının kaynağı olarak kullanıldı.
+
+Sonuç:
+Bildiri taslağında düzeltilmesi gereken noktalar netleşti, destekleyici görseller ve tablo verileri hazırlandı.
+
 **Notlar / Sonraki Adımlar:**
 - Loglama sistemi (logging modülü) print() ifadelerinin yerine tüm katmanlara entegre edilecek (17. gün)
 - openwrt-modified.img.gz dosyası .gitignore kapsamında olduğu için GitHub'a gönderilmedi, sadece yerel bir doğrulama testi olarak kaldı
+
+## 11.08.2026
+
+**Yapılanlar:**
+
+1. Merkezi loglama sistemi kuruldu
+   - layers/logger_config.py oluşturuldu: get_logger() fonksiyonu, hem konsola hem logs/analysis.log dosyasına, zaman damgalı ve seviyeli (INFO/WARNING/ERROR) formatta yazan bir logging yapılandırması sağlıyor
+   - .gitignore'a logs/ eklendi, log dosyalarının versiyon kontrolüne dahil edilmemesi sağlandı
+
+2. Tüm analiz katmanları print() yerine logging kullanacak şekilde güncellendi
+   - static_integrity.py, entropy_analysis.py, yara_scan.py, permission_analysis.py, scoring.py, timeline.py sırayla güncellendi
+   - yara_scan.py'de önceden sessizce (continue ile) atlanan YARA tarama hataları artık logger.warning() ile kayıt altına alınıyor
+
+3. Güncelleme sırasında birkaç teknik sorun çıktı ve giderildi
+   - static_integrity.py ve yara_scan.py dosyalarında düzenleme sırasında girinti (indentation) hataları oluştu, dosyalar tamamen yeniden yazılarak düzeltildi
+   - scoring.py'de logger import satırı eksik kalmıştı, eklendi
+   - timeline.py'de sys.path.append() satırının import'lardan sonra konumlanması, doğrudan çalıştırıldığında (python layers/timeline.py) ModuleNotFoundError'a yol açtı; satır dosyanın en üstüne taşınarak düzeltildi
+
+4. Değişiklikler test edildi
+   - python layers/scoring.py ve python layers/timeline.py çalıştırıldı, log çıktısının hem terminalde hem logs/analysis.log dosyasında doğru göründüğü doğrulandı
+   - pytest tests/ -v ile 21/21 test PASSED, loglama eklemesinin mevcut davranışı etkilemediği doğrulandı
+
+**Sonuç:**
+Proje artık tüm katmanlarında gerçek bir logging altyapısı kullanıyor; print() ifadelerinin hiçbiri kalmadı. Bu, hata ayıklamayı ve sistemin çalışma geçmişini takip etmeyi kolaylaştıran, üretim kalitesinde bir iyileştirme.
+
+**Literatür Taraması (paralel görev):**
+**Yapılanlar:**
+Literatür Taraması / Bildiri Taslağı:
+
+1. Bildirinin başlığı "Gömülü Sistem Firmware'lerinde Karşılaştırmalı ve Çok Katmanlı Adli Bütünlük İhlali Tespiti" olarak değiştirildi, Anahtar Kelimeler bölümü eklendi.
+2. Öz, Giriş ve katkılar bölümü, önceki gün belirlenen düzeltmelere göre yeniden yazıldı.
+3. İlgili Çalışmalar bölümü "İlgili Çalışmalar ve Literatürdeki Konum" başlığı altında yeniden yapılandırıldı: Firmware Analiz ve Keşif Araçları, Firmware Bütünlüğü ve Güvenliği, Firmware Adli Bilişimi, Tamamlayıcı Yaklaşımlar ve Genişletme Fırsatları alt başlıkları ile FACT/EMBA değerlendirmesi ve Literatürdeki Konum bölümü eklendi. 30 makalelik literatür karşılaştırma tablosundan sayısal veriler (12 çalışmada çok katmanlı analiz, 4 çalışmada delil zinciri, 5 çalışmada skorlama bileşeni bulunduğu, 1 çalışmada firmware'e özgü olmayan bir A/B binary karşılaştırması olduğu) bölüme dahil edildi.
+4. ChkUp'ın durumu "test edilemedi" olarak güncellendi.
+
+Sonuç:
+Bildiri taslağı son haline getirildi. Literatür taraması paralel görevi bu aşamada tamamlandı.
+
+**Notlar / Sonraki Adımlar:**
+- İkinci bir saldırı senaryosu ile sağlamlık testi yapılacak (18. gün)
