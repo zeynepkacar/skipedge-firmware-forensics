@@ -689,3 +689,36 @@ Bildiri taslağı son haline getirildi. Literatür taraması paralel görevi bu 
 
 **Notlar / Sonraki Adımlar:**
 - İkinci bir saldırı senaryosu ile sağlamlık testi yapılacak (18. gün)
+
+## 12.08.2026
+
+**Yapılanlar:**
+
+1. İkinci, farklı bir saldırı senaryosu tasarlandı ve uygulandı
+   - Amaç: sistemin sadece tek bir test senaryosuna (önceki günlerde kullanılan backdoor + config değişikliği + silme + SUID kombinasyonu) göre değil, genel bir mantığa göre çalıştığını kanıtlamak
+   - data/tamper_firmware_scenario2.py yazıldı - önceki senaryodan kavramsal olarak farklı bir yaklaşım kullanıyor: tek bir büyük ve belirgin backdoor yerine, değişiklikleri birden fazla dosyaya yayan "dağınık saldırı" deseni simüle ediyor
+   - Bu senaryo, gerçek dünyada saldırganların bazen fark edilmemek için değişikliklerini tek bir yerde yoğunlaştırmak yerine küçük parçalara bölmesi mantığına dayanıyor
+
+2. Senaryonun teknik detayları
+   - Gizlenmiş bir backdoor: usr/lib/libcrypto_helper.so adında, meşru bir kütüphane dosyası gibi görünen ama içinde reverse_shell komutu barındıran bir dosya eklendi (önceki senaryodaki gibi usr/bin altında değil, usr/lib altında - kütüphane dosyalarının bulunduğu, daha az dikkat çeken bir konum seçildi)
+   - İki ayrı konfigürasyon dosyasında küçük değişiklikler: etc/sysctl.conf dosyasına bir kernel güvenlik ayarını devre dışı bırakan bir satır eklendi, etc/hosts dosyasına şüpheli bir sunucu adresi eklendi
+   - Var olan bir sistem binary'sinde izin yükseltme: usr/sbin/crond (zamanlanmış görevleri çalıştıran servis) dosyasına, dosyanın kendisi hiç değiştirilmeden, sadece SUID izni eklendi - bu, "yeni bir dosya eklenip SUID verilmesi" değil, "var olan bir dosyanın izninin sonradan değiştirilmesi" senaryosu
+
+3. Bu senaryo ayrı bir hedef dizine (data/suspicious_v2) ve ayrı bir izin manifestine (data/suspicious_v2_permissions.json) uygulandı, önceki senaryonun verisiyle hiç karışmadı
+
+4. Senaryo, main.py (CLI aracı) ile --original-manifest ve --suspicious-manifest parametreleri kullanılarak analiz edildi
+   - Sonuç: 75/100 şüphe skoru, 5 bulgu, delil zinciri bütünlüğü PASSED
+   - Bulgu dağılımı: 3 statik bütünlük bulgusu (1 eklenen, 2 değiştirilen), 1 YARA eşleşmesi, 1 izin değişikliği
+   - Bu profil, önceki senaryonun profilinden (100/100, 7 bulgu: 3 statik, 1 YARA, 1 izin - ama ek olarak 1 silme ve daha yüksek toplam skor) belirgin şekilde farklı
+
+5. Önemli bir teknik gözlem yapıldı ve doğrulandı
+   - crond dosyasına eklenen SUID izni, sistem tarafından doğru şekilde "permission_changed" olarak sınıflandırıldı, "new_suid_sgid" (yeni SUID dosyası) kategorisiyle karıştırılmadı
+   - Bu iki kategori (yeni dosyada SUID vs. var olan dosyada SUID değişikliği) daha önceki testlerde hiç aynı anda karşılaştırılmamıştı - önceki senaryoda her zaman "yeni eklenen dosyaya SUID" test edilmişti, bu ilk kez "var olan dosyanın izninin değişmesi" dalının gerçek veriyle doğrulanmasını sağladı
+   - Bu, layers/permission_analysis.py'deki compare_permissions fonksiyonunun iki farklı senaryoyu da doğru ayırt edebildiğinin kanıtı oldu
+
+**Sonuç:**
+Sistem, birbirinden tamamen farklı tasarlanmış iki saldırı deseninde de tutarlı, doğru ve anlamlı sonuçlar üretti. Bulgu sayıları ve skorları farklı çıkmasına rağmen (75 vs 100, 5 vs 7 bulgu), her iki senaryoda da tespit edilen bulgular gerçekte yapılan manipülasyonlarla birebir örtüştü, hiçbir yanlış pozitif veya kaçırılan bulgu olmadı. Bu, projenin belirli bir test senaryosuna özel olarak ayarlanmadığını (overfitting yapılmadığını), genel ve sağlam bir tehdit tespit mantığına dayandığını kanıtlıyor.
+
+**Notlar / Sonraki Adımlar:**
+- Son regresyon testi ve GitHub reposu temizliği yapılacak (19. gün) - bu, 13. günde ertelenen "temiz klasöre yeniden klonlama" testini de içerecek
+
