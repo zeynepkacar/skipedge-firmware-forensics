@@ -1,0 +1,2 @@
+/etc/modules.d/35-e1000
+/lib/modules/6.12.94/e1000.ko

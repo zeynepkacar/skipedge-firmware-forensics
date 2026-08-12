@@ -1,0 +1,2 @@
+/etc/modules.d/12-amazon-ena
+/lib/modules/6.12.94/ena.ko

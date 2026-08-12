@@ -1,0 +1,3 @@
+/etc/modules-boot.d/18-phy-realtek
+/etc/modules.d/18-phy-realtek
+/lib/modules/6.12.94/realtek.ko

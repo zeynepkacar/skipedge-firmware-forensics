@@ -1,0 +1,2 @@
+/etc/modules.d/20-pcs-xpcs
+/lib/modules/6.12.94/pcs_xpcs.ko

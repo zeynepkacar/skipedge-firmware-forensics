@@ -1,0 +1,2 @@
+/etc/modules.d/45-dwmac-intel
+/lib/modules/6.12.94/dwmac-intel.ko

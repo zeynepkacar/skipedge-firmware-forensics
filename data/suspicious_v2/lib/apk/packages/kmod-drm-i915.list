@@ -1,0 +1,2 @@
+/etc/modules.d/drm-i915
+/lib/modules/6.12.94/i915.ko

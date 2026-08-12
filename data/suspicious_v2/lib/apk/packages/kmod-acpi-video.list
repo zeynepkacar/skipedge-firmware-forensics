@@ -1,0 +1,3 @@
+/etc/modules.d/acpi-video
+/lib/modules/6.12.94/video.ko
+/lib/modules/6.12.94/wmi.ko

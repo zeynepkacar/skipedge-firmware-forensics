@@ -1,0 +1,2 @@
+/etc/modules.d/35-ixgbe
+/lib/modules/6.12.94/ixgbe.ko

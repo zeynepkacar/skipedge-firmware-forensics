@@ -1,0 +1,2 @@
+/etc/modules.d/drm-display-helper
+/lib/modules/6.12.94/drm_display_helper.ko
