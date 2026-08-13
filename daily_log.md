@@ -722,3 +722,27 @@ Sistem, birbirinden tamamen farklı tasarlanmış iki saldırı deseninde de tut
 **Notlar / Sonraki Adımlar:**
 - Son regresyon testi ve GitHub reposu temizliği yapılacak (19. gün) - bu, 13. günde ertelenen "temiz klasöre yeniden klonlama" testini de içerecek
 
+## 13.08.2026
+
+**Yapılanlar:**
+
+1. Temiz klasöre yeniden klonlama testi yapıldı (13. günden ertelenen adım)
+   - Proje, GitHub'dan tamamen ayrı, boş bir klasöre (test-clone) yeniden klonlandı
+   - README.md'deki "Kullanım" adımları, hiçbir sohbet geçmişine veya önceki bilgiye başvurulmadan, harfiyen takip edilerek kurulum yapıldı: bağımlılıkların kurulması, firmware verisinin hazırlanması, testlerin ve CLI aracının çalıştırılması
+   - Tüm adımlar sorunsuz tamamlandı, README'nin eksiksiz ve doğru olduğu, projenin başka biri tarafından da (Furkan Bey dahil) klonlanıp çalıştırılabileceği kanıtlandı
+
+2. Ana proje klasöründe son regresyon testi yapıldı
+   - pytest tests/ -v çalıştırıldı: 21/21 test PASSED
+
+3. Repo genel temizliği yapıldı
+   - .gitignore dosyası genişletildi: data/suspicious_v2/, data/*_permissions.json, .pytest_cache/, .vscode/ satırları eklendi
+   - Kontrol sırasında, izin manifestleri (original_permissions.json, suspicious_permissions.json, suspicious_v2_permissions.json) ve data/suspicious_v2/ klasörünün .gitignore güncellenmeden önce yanlışlıkla GitHub'a commit edildiği fark edildi
+   - git rm --cached komutlarıyla bu dosyalar takipten çıkarıldı (yerel diskten silinmeden, sadece Git'in izlemesi durduruldu), değişiklikler commit ve push edildi
+   - Ayrıca data/raw_firmware/ altında yanlışlıkla oluşmuş bir yedek dosya (openwrt-modified.img - Kopya.gz) tespit edildi; önem arz etmediği için repo üzerinde bırakılmasına karar verildi
+   - test-clone klasörü, amacına ulaştıktan sonra silindi
+
+**Sonuç:**
+Proje, hem kod hem dokümantasyon açısından son kez sıfırdan doğrulandı. Bağımsız bir klonlama denemesi ve tüm otomatik testler başarıyla geçti. Repo, gereksiz/yanlışlıkla takip edilen dosyalardan temizlendi. Proje teslime hazır durumda.
+
+**Notlar / Sonraki Adımlar:**
+- Final teslim: son kontroller, son commit (20. gün)
