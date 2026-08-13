@@ -7,10 +7,18 @@ __pycache__/
 *.pyc
 .venv/
 .venv-1/
+.pytest_cache/
 
 # Çıkarılmış firmware dosya sistemleri (binlerce küçük dosya, repo şişirir)
 data/original/
 data/suspicious/
+data/suspicious_v2/
 
+# İzin manifestleri (her extraction'da otomatik üretiliyor)
+data/*_permissions.json
 
+# Loglar
 logs/
+
+# Editör ayarları (kişiye özel, paylaşılmaması gereken)
+.vscode/
