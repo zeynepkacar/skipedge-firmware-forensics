@@ -1,3 +1,0 @@
-/etc/modules-boot.d/35-igb
-/etc/modules.d/35-igb
-/lib/modules/6.12.94/igb.ko

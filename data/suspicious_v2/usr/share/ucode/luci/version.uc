@@ -1,1 +1,0 @@
-export const revision = '26.180.75667~128a781', branch = 'LuCI (HEAD detached at 128a7812) branch';
