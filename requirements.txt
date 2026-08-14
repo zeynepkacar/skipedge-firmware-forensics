@@ -1,2 +1,4 @@
 PySquashfsImage
 yara-python
+streamlit
+pytest
