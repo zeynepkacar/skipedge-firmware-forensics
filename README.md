@@ -11,7 +11,7 @@ Bu proje, Spikedge bünyesinde yürütülen yaz stajı kapsamında geliştirilme
 - **Öğrenci:** Zeynep
 - **Bölüm:** Adli Bilişim Mühendisliği (3. sınıf → 4. sınıf)
 - **Şirket:** Spikedge
-- **Staj türü:** Uzaktan, 20 iş günü
+- **Staj türü:** 20 iş günü
 
 ## Amaç
 
