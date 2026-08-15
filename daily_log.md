@@ -746,3 +746,30 @@ Proje, hem kod hem dokümantasyon açısından son kez sıfırdan doğrulandı. 
 
 **Notlar / Sonraki Adımlar:**
 - Final teslim: son kontroller, son commit (20. gün)
+## 14.08.2026
+
+**Yapılanlar:**
+
+1. Proje son kez genel olarak gözden geçirildi
+   - README.md, LICENSE, .gitignore dosyalarının güncel ve doğru olduğu kontrol edildi
+
+2. requirements.txt tamamlandı
+   - Daha önce ayrı ayrı kurulan streamlit ve pytest bağımlılıkları da dosyaya eklendi
+   - Artık tek bir pip install -r requirements.txt komutuyla projenin tüm bağımlılıkları kurulabiliyor
+
+3. README.md son kez güncellendi
+   - Komut Satırı Kullanımı (CLI) bölümü eklendi: main.py'nin nasıl kullanılacağı belgelendi (daha önce koda eklenmişti ama README'de yer almıyordu)
+   - Testleri Çalıştırma bölümü eklendi: pytest tests/ -v komutu belgelendi
+   - Kullanım bölümü sadeleştirildi, config.json'un skorlama ağırlıklarını yapılandırılabilir kıldığına dair bir not eklendi
+
+4. Son doğrulama yapıldı
+   - pip install -r requirements.txt çalıştırıldı, tüm bağımlılıklar sorunsuz kuruldu
+   - pytest tests/ -v çalıştırıldı: 21/21 test PASSED
+
+5. Tüm değişiklikler commit edilip GitHub'a gönderildi
+
+**Sonuç:**
+Proje, 20 iş günlük staj kapsamında planlanan tüm işlerle tamamlandı: 6 analiz katmanı (statik bütünlük, entropi, YARA, izin/yetki, skorlama, değerlendirme), Streamlit web arayüzü (FR-1 - FR-8 eksiksiz), komut satırı arayüzü, 2 gerçek CVE değerlendirmesi (CVE-2024-54143, CVE-2024-9643), 21 otomatik testten oluşan bir test paketi, yapılandırılabilir skorlama sistemi, loglama altyapısı, ve iki farklı saldırı senaryosuyla doğrulanmış bir tespit mantığı. Proje dokümantasyonu (README, LICENSE, daily_log) güncel ve eksiksiz durumda.
+
+**Staj Süreci Özeti:**
+20 iş günü boyunca proje sıfırdan planlanıp geliştirildi: ilk hafta veri toplama ve temel analiz katmanları, ikinci hafta ileri analiz katmanları, üçüncü hafta skorlama ve delil zinciri, dördüncü hafta değerlendirme/arayüz/raporlama ile tamamlandı. Kalan günler projeye ek değer katan çalışmalarla (test paketi, yapılandırılabilir skorlama, CLI arayüzü, loglama sistemi, ikinci saldırı senaryosu, entegrasyon testleri) dolduruldu. Süreç boyunca çeşitli teknik zorluklar (Windows/NTFS'in Unix izin bitlerini desteklememesi, binwalk'ın Windows'ta çalışmaması, WSL kurulumu, gzip/squashfs formatlarının binary yapısı) karşılaşıldı ve çözüldü.
